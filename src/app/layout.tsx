@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const geistSans = Raleway({
+  weight: ["300, 400, 600"],
+  variable: "--font-raleway",
+  subsets: ["latin", "cyrillic"],
 });
 
 const geistMono = Geist_Mono({
