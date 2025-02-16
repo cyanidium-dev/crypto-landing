@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        raleway: ["var(--font-raleway)"],
+        michelin: ["var(--font-michelin)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
