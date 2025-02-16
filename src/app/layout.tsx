@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Raleway } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const raleway = Raleway({
+  weight: ["300", "400", "600"],
+  variable: "--font-raleway",
+  subsets: ["latin", "cyrillic"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const michelin = localFont({
+  src: [
+    {
+      weight: "700",
+      path: "../fonts/Michelin-Bold.woff2",
+    },
+  ],
+  variable: "--font-michelin",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${raleway.variable} ${michelin.variable} antialiased font-raleway`}
       >
         {children}
       </body>
