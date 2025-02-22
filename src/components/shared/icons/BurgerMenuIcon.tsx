@@ -14,9 +14,9 @@ export default function BurgerMenuIcon({ className }: IconProps) {
       <path
         d="M2 2H29M2 11H29M2 20H29"
         stroke="#FEF4FF"
-        stroke-width="2.25"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
