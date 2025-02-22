@@ -25,7 +25,7 @@ export default function MenuLinkMob({
         href={`/#${path}`}
         onClick={() => setIsHeaderMenuOpened(false)}
         className="text-20reg transition duration-300 ease-out active:text-greenDark focus-visible:text-greenDark
-         laptop:hover:text-greenDark outline-none"
+         laptop:hover:text-greenDark outline-none active:text-pink"
       >
         {title}
       </Link>
