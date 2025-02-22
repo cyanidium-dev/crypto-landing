@@ -11,7 +11,10 @@ export default function TradingBenefits() {
       <h2 className="mb-4 tabxl:mb-5 font-michelin uppercase italic text-20bold tabxl:text-40bold text-center">
         Плюсы трейдинга
       </h2>
-      <p className="w-fit pr-2 mx-auto mb-[50px] tabxl:mb-[68px] font-michelin uppercase italic text-24bold tabxl:text-32bold text-transparent bg-clip-text bg-caviarGradient text-center">
+      <p
+        className="w-fit pr-2 mx-auto mb-[50px] tabxl:mb-[68px] font-michelin uppercase italic text-24bold tabxl:text-32bold text-transparent 
+      bg-clip-text bg-caviarGradient text-center"
+      >
         Почему это выгодно?
       </p>
       <BenefitsList />
