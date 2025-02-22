@@ -14,7 +14,7 @@ export default function IconButton({
       aria-label="icon button"
       type="button"
       onClick={handleClick}
-      className={`outline-none ${className}`}
+      className={`flex justify-center items-center p-0 outline-none ${className}`}
     >
       {children}
     </button>
