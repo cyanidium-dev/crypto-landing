@@ -7,12 +7,12 @@ interface LogoProps {
 
 export default function Logo({ className = "" }: LogoProps) {
   return (
-    <Link href="/">
-      <span
+    <Link href="/" className="flex justify-center">
+      <p
         className={`pr-1 overflow-visible font-michelin uppercase italic text-transparent bg-clip-text bg-logoGradient ${className}`}
       >
         Нурлан о трейдинге
-      </span>
+      </p>
     </Link>
   );
 }
