@@ -4,3 +4,5 @@ export const menuList = [
   { title: "Сертификат", path: "certificate" },
   { title: "Отзывы", path: "reviews" },
 ];
+
+export const TELEGRAM_URL = "https://t.me/+vPlJICrfUOM3MTVi";

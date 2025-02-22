@@ -13,7 +13,10 @@ export default function BurgerMenuButton({
   toggleHeaderMenuOpen,
 }: BurgerMenuButtonProps) {
   return (
-    <IconButton handleClick={toggleHeaderMenuOpen} className="size-8">
+    <IconButton
+      handleClick={toggleHeaderMenuOpen}
+      className="relative z-[60] size-8"
+    >
       {isHeaderMenuOpened ? <CircleCloseIcon /> : <BurgerMenuIcon />}
     </IconButton>
   );

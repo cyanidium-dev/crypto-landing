@@ -7,6 +7,10 @@
   --black: #060113;
 }
 
+:root:has(.no-doc-scroll) {
+  overflow: hidden;
+}
+
 body {
   overflow-x: hidden;
   color: var(--white);

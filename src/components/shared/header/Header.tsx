@@ -4,7 +4,7 @@ import HeaderDesktop from "./HeaderDesktop";
 
 export default function Header() {
   return (
-    <header className="container max-w-[1920px]">
+    <header>
       <HeaderMob />
       <HeaderDesktop />
     </header>
