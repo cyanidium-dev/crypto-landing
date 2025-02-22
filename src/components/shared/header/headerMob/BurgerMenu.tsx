@@ -16,7 +16,7 @@ export default function BurgerMenu({
         isHeaderMenuOpened
           ? "translate-x-0 opacity-100 no-doc-scroll"
           : "translate-x-full opacity-0"
-      } absolute top-0 right-0 z-50 w-[100vw] max-w-full h-[100dvh] pt-[94px] pb-14 container bg-black
+      } absolute top-[82px] right-0 w-[100vw] max-w-full h-[calc(100dvh-82px)] pt-3 pb-14 container bg-black
       transition duration-[600ms] overflow-y-auto`}
     >
       <NavMenuMob setIsHeaderMenuOpened={setIsHeaderMenuOpened} />

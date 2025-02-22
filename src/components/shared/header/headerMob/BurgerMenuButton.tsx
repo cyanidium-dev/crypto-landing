@@ -1,7 +1,7 @@
 import React from "react";
-import IconButton from "../buttons/IconButton";
-import BurgerMenuIcon from "../icons/BurgerMenuIcon";
-import CircleCloseIcon from "../icons/CloseCircleIcon";
+import IconButton from "../../buttons/IconButton";
+import BurgerMenuIcon from "../../icons/BurgerMenuIcon";
+import CircleCloseIcon from "../../icons/CloseCircleIcon";
 
 interface BurgerMenuButtonProps {
   isHeaderMenuOpened: boolean;
