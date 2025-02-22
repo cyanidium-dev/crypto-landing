@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function BeforeAndAfter() {
-  return <div>BeforeAndAfter</div>;
+export default function Before() {
+  return <div>Before</div>;
 }
