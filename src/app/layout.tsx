@@ -33,6 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${raleway.variable} ${michelin.variable} flex min-h-screen flex-col antialiased`}
       >
