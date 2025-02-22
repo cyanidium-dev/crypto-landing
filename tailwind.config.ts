@@ -51,6 +51,7 @@ export default {
       colors: {
         black: "#060113",
         white: "#FEF4FF",
+        pink: "#EF1A5B",
       },
       backgroundImage: {
         caviarGradient:
@@ -67,6 +68,7 @@ export default {
           "linear-gradient(94.6deg, #F54180 3.73%, #FFE204 142.88%)",
         redLightYellowGradient:
           "linear-gradient(95.46deg, #F31260 -78.11%, #FFEA4D 92.68%)",
+        signUpTextGradient: "linear-gradient(90deg, #FF3995 0%, #E7FF2E 100%)",
       },
     },
   },
