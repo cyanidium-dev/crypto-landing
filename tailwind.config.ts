@@ -12,6 +12,7 @@ export default {
         tab: "768px",
         tabxl: "1024px",
         laptop: "1280px",
+        desk: "1520px",
         deskxl: "1920px",
       },
       container: {
