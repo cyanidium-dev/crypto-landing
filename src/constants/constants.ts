@@ -6,3 +6,5 @@ export const menuList = [
 ];
 
 export const TELEGRAM_URL = "https://t.me/+vPlJICrfUOM3MTVi";
+
+export const CYANIDIUM_URL = "https://www.cyanidium.dev/";

@@ -51,6 +51,7 @@ export default {
       colors: {
         black: "#060113",
         white: "#FEF4FF",
+        pink: "#EF1A5B",
       },
       backgroundImage: {
         caviarGradient:

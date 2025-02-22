@@ -16,8 +16,8 @@ export default function MenuLink({ menuItem, className = "" }: MenuLinkProps) {
     <li className={`text-center ${className}`}>
       <Link
         href={`/#${path}`}
-        className="text-16reg transition duration-300 ease-out active:text-greenDark focus-visible:text-greenDark
-         laptop:hover:text-greenDark outline-none"
+        className="text-16reg text-white transition duration-300 ease-out active:text-pink focus-visible:text-pink
+         laptop:hover:text-pink outline-none"
       >
         {title}
       </Link>
