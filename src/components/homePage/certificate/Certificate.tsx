@@ -8,10 +8,10 @@ export default function Certificate() {
       className="flex flex-col tabxl:flex-row tabxl:justify-between tabxl:items-center gap-y-[116px] tabxl:gap-x-[80px] container max-w-[1920px] scroll-mt-[82px] tabxl:scroll-mt-[124px] py-[60px] laptop:py-[93px] mb-[123px] laptop:mb-14"
     >
       <div className="tabxl:max-w-[424px] desk:max-w-full">
-        <h2 className="mb-5 font-michelin uppercase italic text-center tabxl:text-left text-24bold tabxl:text-40bold">
+        <h2 className="mb-5 font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-40bold">
           Наш сертификат
         </h2>
-        <p className="font-michelin uppercase italic text-center tabxl:text-left text-20bold tabxl:text-24bold text-transparent bg-clip-text bg-purpleGradient">
+        <p className="font-michelin uppercase text-center tabxl:text-left text-20bold tabxl:text-24bold text-transparent bg-clip-text bg-purpleGradient">
           подтверждение профессионализма
         </p>
       </div>
