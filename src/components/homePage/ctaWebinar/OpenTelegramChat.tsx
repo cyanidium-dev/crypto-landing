@@ -1,5 +1,6 @@
 import React from "react";
 import SignUpButton from "./SignUpButton";
+import CountdownTimer from "./CountdownTimer";
 
 export default function OpenTelegramChat() {
   return (
@@ -10,6 +11,7 @@ export default function OpenTelegramChat() {
       <p className="mb-7 tabxl:mb-6 font-michelin uppercase text-12bold tabxl:text-16bold text-center">
         после доступ будет стоить 99$
       </p>
+      <CountdownTimer />
       <SignUpButton />
     </div>
   );
