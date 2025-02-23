@@ -5,6 +5,7 @@ import BeforeImages from "./BeforeImages";
 export default function Before() {
   return (
     <section
+      id="before"
       className="relative container max-w-[1920px] scroll-mt-[82px] tabxl:scroll-mt-[124px] pt-[100px] tabxl:pt-[91px] pb-14 tabxl:pb-[125px] 
     mb-[78px] tabxl:mb-[127px]"
     >

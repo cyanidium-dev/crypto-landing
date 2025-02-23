@@ -1,4 +1,4 @@
-import { TELEGRAM_URL } from "@/constants/constants";
+import { TELEGRAM_URL } from "../../../../public/telegramChatLink";
 import React from "react";
 
 interface SignUpButtonProps {
