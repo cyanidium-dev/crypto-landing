@@ -1,5 +1,6 @@
 import React from "react";
 import BonusesList from "./BonusesList";
+import OpenTelegramChat from "./OpenTelegramChat";
 
 export default function CtaWebinar() {
   return (
@@ -11,6 +12,7 @@ export default function CtaWebinar() {
         Заработай свои первые 500$ с трейдинга уже на этой неделе!
       </p>
       <BonusesList />
+      <OpenTelegramChat />
     </section>
   );
 }

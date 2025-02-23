@@ -18,7 +18,7 @@ export default function BonusesList() {
   ];
 
   return (
-    <ul className="flex flex-col sm:flex-row sm:flex-wrap items-center sm:justify-between gap-5 tabxl:gap-y-6 tabxl:max-w-[1100px] tabxl:mx-auto">
+    <ul className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center tabxl:justify-between gap-5 tabxl:gap-y-6 tabxl:max-w-[1100px] tabxl:mx-auto">
       {bonusesList.map((bonus, idx) => (
         <BulletedListItem key={idx} item={bonus} />
       ))}
