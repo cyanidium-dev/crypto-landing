@@ -5,11 +5,13 @@ interface BenefitItemProps {
     title: string;
   };
   variant?: "caviar" | "purple";
+  className?: string;
 }
 
 export default function BulletedListItem({
   item,
   variant = "purple",
+  className = "",
 }: BenefitItemProps) {
   const { title } = item;
 
@@ -17,7 +19,7 @@ export default function BulletedListItem({
     <li
       className={`flex justify-center items-center w-full tabxl:w-[357px] laptop:w-[447px] max-w-[331px] tabxl:max-w-[357px] laptop:max-w-[447px] p-[1px] rounded-full ${
         variant === "purple" ? "bg-purpleGradient" : "bg-caviarGradient"
-      }`}
+      } ${className}`}
     >
       <div className="flex flex-col justify-center w-full h-full py-[22px] tabxl:py-[17px] px-7 mob:px-9 tabxl:px-7 laptop:px-[34px] bg-black rounded-full">
         <div className="flex items-center gap-x-5 laptop:gap-x-[47px]">
