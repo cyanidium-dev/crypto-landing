@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import MainButton from "@/components/shared/buttons/MainButton";
-import { TELEGRAM_URL } from "@/constants/constants";
+import { TELEGRAM_URL } from "../../../../public/telegramChatLink";
 
 export default function CtaSignUp() {
   return (
