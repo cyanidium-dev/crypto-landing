@@ -10,7 +10,10 @@ export default function Before() {
     mb-[78px] tabxl:mb-[127px]"
     >
       <BeforeImages />
-      <h2 className="max-w-[342px] sm:max-w-[597px] tabxl:max-w-[597px] tabxl:ml-[19%] mb-[416px] tabxl:mb-[14px] mx-auto tabxl:mr-0 font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-40bold">
+      <h2
+        className="max-w-[342px] sm:max-w-[597px] tabxl:max-w-[597px] tabxl:ml-[19%] mb-[416px] tabxl:mb-[14px] mx-auto tabxl:mr-0 
+      font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-40bold"
+      >
         Моё «До» и «После» в трейдинге
       </h2>
       <div className="tabxl:flex tabxl:gap-x-6 laptop:gap-x-[57px]">
