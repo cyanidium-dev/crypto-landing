@@ -5,8 +5,8 @@ import AfterImages from "./AfterImages";
 export default function After() {
   return (
     <section
-      className="relative tabxl:flex tabxl:flex-col-reverse container max-w-[1920px] scroll-mt-[82px] tabxl:scroll-mt-[124px] pt-[443px] tabxl:pt-[197px] pb-14 tabxl:pb-[82px]
-    mb-[109px] tabxl:mb-[83px]"
+      className="relative tabxl:flex tabxl:flex-col-reverse container max-w-[1920px] w-full scroll-mt-[82px] tabxl:scroll-mt-[124px] pt-[443px] tabxl:pt-[197px] pb-14 tabxl:pb-[82px]
+    mb-[109px] tabxl:mb-[83px] overflow-hidden"
     >
       <AfterImages />
       <p className="w-fit px-1 tabxl:px-[10px] mb-3 tabxl:mb-0 mx-auto font-michelin uppercase text-center text-64bold tabxl:text-128bold text-transparent bg-clip-text bg-caviarGradient">
