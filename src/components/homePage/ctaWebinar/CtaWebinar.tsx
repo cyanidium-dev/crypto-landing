@@ -11,8 +11,7 @@ export default function CtaWebinar() {
     >
       <h2
         className="max-w-[331px] sm:max-w-[472px] tabxl:max-w-[744px] mb-3 font-michelin uppercase text-24bold tabxl:text-40bold text-transparent 
-        bg-clip-text 
-      bg-caviarGradient"
+        bg-clip-text bg-caviarGradient"
       >
         залетай в мой канал и посети бесплатный вебинар по основам трейдинга
       </h2>
@@ -25,7 +24,7 @@ export default function CtaWebinar() {
         width={640}
         height={640}
         className="absolute -z-10 top-9 sm:top-0 tabxl:-top-[162px] -right-[65px] tabxl:-right-[178px] laptop:-right-[calc(-50%+550px+205px)] w-[659px] tabxl:w-[821px] h-[659px] tabxl:h-[821px] 
-        object-cover origin-center overflow-visible"
+        object-cover origin-center"
       />
       <BonusesList />
       <OpenTelegramChat />
