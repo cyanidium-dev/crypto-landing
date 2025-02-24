@@ -11,8 +11,7 @@ export default function CtaWebinar() {
     >
       <h2
         className="max-w-[331px] sm:max-w-[472px] tabxl:max-w-[744px] mb-3 font-michelin uppercase text-24bold tabxl:text-40bold text-transparent 
-        bg-clip-text 
-      bg-caviarGradient"
+        bg-clip-text bg-caviarGradient"
       >
         залетай в мой канал и посети бесплатный вебинар по основам трейдинга
       </h2>
