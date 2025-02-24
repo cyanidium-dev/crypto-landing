@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: "Нурлан | Все о трейдинге",
   description:
     "Хотите зарабатывать на трейдинге? Нурлан – эксперт, который научит вас стратегиям, анализу и управлению рисками. Бесплатные разборы, личная поддержка и проверенные методики.",
-  // metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || ""),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || ""),
 };
 
 export default function RootLayout({
