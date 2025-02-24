@@ -17,7 +17,7 @@ export default function Reviews() {
       />
       <div className="container max-w-[1920px] tabxl:ml-[35.5%] laptop:ml-[30.5%] mb-[61px] tabxl:mb-[71px]">
         <h2
-          className="mb-3 font-michelin uppercase text-32bold tabxl:text-64bold text-transparent bg-clip-text bg-caviarGradient text-center 
+          className="w-fit mb-3 font-michelin uppercase text-32bold tabxl:text-64bold text-transparent bg-clip-text bg-caviarGradient text-center 
       tabxl:text-left"
         >
           Отзывы
