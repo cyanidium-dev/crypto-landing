@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import ReviewsSlider from "./ReviewsSlider";
 
 export default function Reviews() {
   return (
@@ -14,7 +15,7 @@ export default function Reviews() {
         height={768}
         className="absolute -z-10 -top-4 tabxl:top-[137px] left-[calc(50%-322px+12px)] tabxl:-left-[90px] w-[644px] max-w-[644px] h-[483px] object-cover origin-center overflow-visible"
       />
-      <div className="container max-w-[1920px] tabxl:ml-[35.5%] laptop:ml-[30.5%]">
+      <div className="container max-w-[1920px] tabxl:ml-[35.5%] laptop:ml-[30.5%] mb-[61px] tabxl:mb-[71px]">
         <h2
           className="mb-3 font-michelin uppercase text-32bold tabxl:text-64bold text-transparent bg-clip-text bg-caviarGradient text-center 
       tabxl:text-left"
@@ -25,6 +26,7 @@ export default function Reviews() {
           Трейдинг – это свобода и контроль над финансами!
         </p>
       </div>
+      <ReviewsSlider />
     </section>
   );
 }

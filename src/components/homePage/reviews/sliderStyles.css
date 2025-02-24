@@ -1,0 +1,63 @@
+.swiper {
+  @media screen and (min-width: 1024px) {
+    margin-left: 480px;
+    padding-left: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 517px;
+  }
+}
+
+.swiper-slide {
+  width: 315px;
+  height: 100% !important;
+  min-height: 100% !important;
+  @media screen and (min-width: 1024px) {
+    width: 260px;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  @media screen and (min-width: 1024px) {
+    width: 80px;
+    height: 80px;
+    top: calc(50% - 10px);
+  }
+  border-radius: 100%;
+  background: linear-gradient(94.6deg, #f31260 3.73%, #b39e00 142.88%);
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  scale: 95%;
+  transition: scale 300ms ease-out;
+}
+
+.swiper-button-prev::after {
+  content: "" !important;
+  display: flex;
+  width: 100% !important;
+  height: 100% !important;
+  background-image: url("/images/icons/arrowLeftMob.svg");
+  @media screen and (min-width: 1024px) {
+    background-image: url("/images/icons/arrowLeft.svg");
+  }
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-next::after {
+  content: "" !important;
+  display: flex;
+  width: 100% !important;
+  height: 100% !important;
+  background-image: url("/images/icons/arrowRightMob.svg");
+  @media screen and (min-width: 1024px) {
+    background-image: url("/images/icons/arrowRight.svg");
+  }
+  background-position: center;
+  background-repeat: no-repeat;
+}
