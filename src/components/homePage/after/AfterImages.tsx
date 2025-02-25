@@ -32,13 +32,7 @@ export default function AfterImages() {
         className="hidden tabxl:block absolute -z-50 top-0 left-0 object-cover"
       />
       <div className="absolute -z-[35] top-[205px] tabxl:top-[279px] left-[calc(50%-82px-42px)] tabxl:left-[calc(50%-180px)] w-[165px] tabxl:w-[226px] h-[138px] tabxl:h-[188px] bg-caviarGradient blur-[120px] tabxl:blur-[160px]"></div>
-      <Image
-        src="/images/backgrounds/afterSection/topGradient.svg"
-        alt="gradient"
-        width="1280"
-        height="829"
-        className="block absolute -z-50 top-0 left-0 w-full h-[405px] tabxl:h-auto object-cover"
-      />
+      <div className="absolute -top-3 left-0 -z-[50] w-full h-[605px] tabxl:h-[829px] bg-afterSectionTopGradient"></div>
       <Image
         src="/images/backgrounds/afterSection/bottomGradient.svg"
         alt="gradient"

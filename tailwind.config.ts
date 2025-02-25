@@ -72,6 +72,8 @@ export default {
         redLightYellowGradient:
           "linear-gradient(95.46deg, #F31260 -78.11%, #FFEA4D 92.68%)",
         signUpTextGradient: "linear-gradient(90deg, #FF3995 0%, #E7FF2E 100%)",
+        afterSectionTopGradient:
+          "linear-gradient(175.41deg, #060113 7.06%, rgba(6, 1, 19, 0) 109.54%)",
       },
     },
   },
