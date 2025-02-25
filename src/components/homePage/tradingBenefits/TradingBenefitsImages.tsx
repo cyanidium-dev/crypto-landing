@@ -9,7 +9,7 @@ export default function TradingBenefitsImages() {
         alt="dollars"
         width="1024"
         height="1027"
-        className="block tabxl:hidden absolute -z-50 top-[10px] left-0 h-[1027px] object-cover object-left"
+        className="block tabxl:hidden absolute -z-50 top-[10px] left-0 h-[1027px] tabxs:h-[625px] object-cover object-left"
       />
       <Image
         src="/images/backgrounds/tradingBenefitsSection/dollarDesk.webp"

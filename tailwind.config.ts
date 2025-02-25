@@ -11,6 +11,7 @@ export default {
       screens: {
         mob: "375px",
         mobxl: "514px",
+        tabxs: "726px",
         tab: "768px",
         tabxl: "1024px",
         laptop: "1280px",
