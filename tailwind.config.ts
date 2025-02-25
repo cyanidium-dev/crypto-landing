@@ -10,6 +10,7 @@ export default {
     extend: {
       screens: {
         mob: "375px",
+        mobxl: "514px",
         tab: "768px",
         tabxl: "1024px",
         laptop: "1280px",
