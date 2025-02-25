@@ -75,6 +75,8 @@ export default {
         signUpTextGradient: "linear-gradient(90deg, #FF3995 0%, #E7FF2E 100%)",
         afterSectionTopGradient:
           "linear-gradient(175.41deg, #060113 7.06%, rgba(6, 1, 19, 0) 109.54%)",
+        bottomGradient:
+          "linear-gradient(to top, #060113 22.36%, rgba(6, 1, 19, 0) 113.22%)",
       },
     },
   },
