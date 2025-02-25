@@ -7,10 +7,10 @@ export default function CtaWebinarImages() {
       <Image
         src="/images/contentImages/ctaWebinarMan.webp"
         alt="man"
-        width={640}
-        height={640}
-        className="absolute -z-20 top-9 sm:top-0 tabxl:-top-[162px] -right-[65px] tabxl:-right-[178px] laptop:-right-[calc(-50%+550px+205px)] w-[659px] tabxl:w-[821px] h-[659px] tabxl:h-[821px] 
-    object-cover overflow-visible"
+        width={1342}
+        height={1671}
+        className="absolute -z-20 top-10 mobxl:top-[-60px] laptop:-top-[162px] -right-4 tabxl:-right-[28px] laptop:-right-[calc(-50%+550px+105px)] 
+        h-[659px] laptop:h-[821px] w-auto object-cover overflow-visible"
       />
       <Image
         src="/images/backgrounds/oneRowDollarsDesk.webp"
@@ -24,8 +24,8 @@ export default function CtaWebinarImages() {
        rounded-full bg-purple blur-[150px]"
       ></div>
       <div
-        className="absolute -z-10 top-[314px] tabxl:top-[246px] right-[-192px] w-[815px] 
-        h-[942px] rotate-[103deg] rounded-full bg-black blur-[69px] tabxl:blur-[150px]"
+        className="absolute -z-10 top-[314px] tabxl:top-[246px] laptop:top-[310px] right-[-192px] laptop:right-[calc(50%-870px)] desk:right-[calc(50%-920px)] w-[815px] laptop:w-[1124px]
+        h-[942px] rotate-[103deg] laptop:rotate-0 rounded-full bg-black blur-[69px] tabxl:blur-[90px]"
       ></div>
     </>
   );

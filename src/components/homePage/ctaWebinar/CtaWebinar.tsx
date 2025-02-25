@@ -15,7 +15,7 @@ export default function CtaWebinar() {
       >
         залетай в мой канал и посети бесплатный вебинар по основам трейдинга
       </h2>
-      <p className="w-[247px] tabxl:w-[338px] mb-[205px] tabxl:mb-[42px] text-14light tabxl:text-20light">
+      <p className="w-[207px] tabxl:w-[338px] mb-[205px] tabxl:mb-[42px] text-14light tabxl:text-20light">
         Заработай свои первые 500$ с трейдинга уже на этой неделе!
       </p>
       <CtaWebinarImages />
