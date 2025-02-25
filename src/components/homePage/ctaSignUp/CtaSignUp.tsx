@@ -8,7 +8,7 @@ export default function CtaSignUp() {
     <section
       className="relative container max-w-[1920px] tabxl:flex tabxl:flex-row-reverse tabxl:items-center tabxl:justify-between scroll-mt-[82px] 
       tabxl:scroll-mt-[124px] pt-[30px] laptop:pt-[145px] pb-14 laptop:pb-[131px] 
-  mb-[73px] laptop:mb-[188px] overflow-clip"
+  mb-[73px] laptop:mb-[188px] overflow-x-clip"
     >
       <CtaSignUpImages />
       <div className="tabxl:w-[51.6%] laptop:w-[41.9%] desk:w-[50%] deskxl:w-[45%] mt-[103px] tabxl:mt-0">

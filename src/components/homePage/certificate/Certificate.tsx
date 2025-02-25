@@ -5,9 +5,10 @@ export default function Certificate() {
   return (
     <section
       id="certificate"
-      className="flex flex-col tabxl:flex-row tabxl:justify-between tabxl:items-center gap-y-[116px] tabxl:gap-x-[80px] container max-w-[1920px] 
-      scroll-mt-[82px] tabxl:scroll-mt-[124px] py-[60px] laptop:py-[93px] mb-[123px] laptop:mb-14"
+      className="relative flex flex-col tabxl:flex-row tabxl:justify-between tabxl:items-center gap-y-[116px] tabxl:gap-x-[80px] container max-w-[1920px] 
+      scroll-mt-[82px] tabxl:scroll-mt-[124px] py-[60px] laptop:py-[93px] mb-[123px] laptop:mb-14 overflow-x-clip"
     >
+      <div className="hidden tabxl:block absolute -z-10 top-[204px] left-[-355px] w-[404px] h-[240px] rounded-full bg-purple blur-[250px]"></div>
       <div className="tabxl:max-w-[424px] desk:max-w-full">
         <h2 className="mb-5 font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-40bold">
           Наш сертификат

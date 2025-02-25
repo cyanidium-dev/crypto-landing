@@ -12,14 +12,6 @@ export default function BeforeImages() {
         className="absolute -z-20 top-[137px] sm:top-[72px] tabxl:top-6 left-[29px] mobxl:left-[calc(50%-228px)] tabxl:left-[-91px] desk:left-[-21px] w-[514px] h-[385px] tabxl:w-[799px] deskxl:w-[900px] tabxl:h-[599px] deskxl:h-[677px] 
         object-cover origin-left overflow-visible"
       />
-      {/* <Image
-        src="/images/contentImages/beforeManDesk.webp"
-        alt="man"
-        width={1416}
-        height={1198}
-        className="hidden tabxl:block absolute -z-10 desk:left-[70px] bottom-[88px] deskxl:bottom-6 left-0 tabxl:w-[635px] laptop:w-[708px] 
-        deskxl:w-[800px] h-auto"
-      /> */}
       <Image
         src="/images/contentImages/before.svg"
         alt="man"
