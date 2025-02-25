@@ -6,7 +6,7 @@ export default function Reviews() {
   return (
     <section
       id="reviews"
-      className="relative w-full pt-[430px] tabxl:pt-[154px] pb-[55px] tabxl:pb-[124px] mb-[75px] tabxl:mb-[10px] overflow-clip"
+      className="relative w-full pt-[430px] tabxl:pt-[154px] pb-[55px] tabxl:pb-[124px] mb-[75px] tabxl:mb-[10px] overflow-x-clip tabxl:overflow-clip"
     >
       <ReviewsImages />
       <div className="container max-w-[1920px] tabxl:ml-[35.5%] laptop:ml-[30.5%] mb-[61px] tabxl:mb-[71px]">
