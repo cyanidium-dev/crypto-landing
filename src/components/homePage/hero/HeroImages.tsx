@@ -4,14 +4,17 @@ import Image from "next/image";
 export default function HeroImages() {
   return (
     <>
-      <Image
-        src="/images/contentImages/heroMan.webp"
-        alt="man"
-        width={1332}
-        height={1658}
+      <div
         className="absolute -z-[80] -top-[124px] tabxl:-top-[113px] w-[481px] tabxl:w-[666px] h-[599px] tabxl:h-[829px] left-[calc(50%-240px+15px)]
          tabxl:left-auto tabxl:right-0 object-cover object-left overflow-visible"
-      />
+      >
+        <Image
+          src="/images/contentImages/heroMan.webp"
+          alt="man"
+          width={1332}
+          height={1658}
+        />
+      </div>
       <Image
         src="/images/backgrounds/heroSection/dollarsMob.webp"
         alt="dollars"
@@ -26,14 +29,18 @@ export default function HeroImages() {
         height={559}
         className="hidden tabxl:block absolute -z-[40] tabxl:top-[157px] tabxl:h-[559px] tabxl:left-[-17px] object-cover object-left overflow-visible"
       />
-      <Image
-        src="/images/contentImages/ctaWebinarMan.webp"
-        alt="man"
-        width={1342}
-        height={1671}
+      <div
         className="absolute -z-30 -top-[119px] tabxl:top-[-139px] w-[473px] tabxl:w-[671px] h-[589px] tabxl:h-[835px] left-[calc(50%-237px+17px)] 
         tabxl:left-auto tabxl:right-[-20px] object-cover object-left overflow-visible"
-      />
+      >
+        <Image
+          src="/images/contentImages/ctaWebinarMan.webp"
+          alt="man"
+          width={1342}
+          height={1671}
+          className=""
+        />
+      </div>
       <div
         className="absolute -z-40 top-[-436px] tabxl:top-[-496px] left-[calc(50%-369px-225px)] tabxl:left-[-24px] w-[738px] h-[681px] tabxl:w-[1125px] tabxl:h-[1039px] rounded-full
        bg-black blur-[98px] tabxl:blur-[150px]"
