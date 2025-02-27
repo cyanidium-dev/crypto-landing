@@ -4,22 +4,14 @@ import Image from "next/image";
 export default function CtaSignUpImages() {
   return (
     <>
-      <div className="relative max-w-[375px] tabxl:max-w-[420px] laptop:max-w-[514px] desk:max-w-[540px] deskxl:max-w-[700px] mx-auto tabxl:mx-0">
-        <Image
-          src="/images/contentImages/ctaSignUpMan.webp"
-          alt="man in the sunglasses"
-          width={1028}
-          height={1232}
-          className="relative -z-30"
-        />
-        <Image
-          src="/images/contentImages/startEarning.svg"
-          alt="start earning text"
-          width="316"
-          height="175"
-          className="absolute -z-10 -bottom-[30px] tabxl:-bottom-3 left-4 tabxl:left-10 w-[90%]"
-        />
-      </div>
+      <Image
+        src="/images/contentImages/startEarning.svg"
+        alt="start earning text"
+        width="316"
+        height="175"
+        className="absolute -z-10 top-[290px] tabxl:top-[399px] laptop:top-[513px] deskxl:top-[654px] left-[calc(50%-164px)] tabxl:left-auto tabxl:right-[40px] laptop:right-[96px] deskxl:right-auto deskxl:left-[calc(50%+260px)] w-[316px] tabxl:w-[450px] deskxl:w-[560px] h-auto"
+      />
+
       <div
         className="absolute -z-50 right-[calc(50%-306px)] tabxl:-right-[83px] top-[136px] tabxl:top-[289px] w-[464px] tabxl:w-[532px] laptop:w-[649px] 
        h-[534px] tabxl:h-[612px] laptop:h-[747px] rounded-full bg-purple blur-[107px] tabxl:blur-[150px]"
