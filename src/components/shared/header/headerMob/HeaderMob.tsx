@@ -10,7 +10,7 @@ export default function HeaderMob() {
   const toggleHeaderMenuOpen = () => setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
   return (
-    <div className="fixed z-[60] tabxl:hidden flex items-center justify-between py-6 container max-w-[1920px] bg-black overflow-x-clip">
+    <div className="fixed z-10 tabxl:hidden flex items-center justify-between py-6 container max-w-[1920px] bg-black">
       <Logo className="relative z-[60] text-14bold w-[124px] tab:w-fit" />
       <SignUpButton className="relative z-[60]" />
       <BurgerMenuButton
