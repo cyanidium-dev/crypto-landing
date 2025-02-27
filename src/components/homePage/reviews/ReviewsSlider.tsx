@@ -6,6 +6,10 @@ import "./sliderStyles.css";
 import React from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import dynamic from "next/dynamic";
+import { reviewsVedeoLinksList } from "@/constants/constants";
+
+const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 export default function ReviewsSlider() {
   return (
@@ -27,21 +31,12 @@ export default function ReviewsSlider() {
       speed={1000}
       modules={[Navigation]}
     >
-      <SwiperSlide>
-        <div className="w-[315px] tabxl:w-[260px] h-[401px] tabxl:h-[338px] rounded-[16px] bg-white"></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="w-[315px] tabxl:w-[260px] h-[401px] tabxl:h-[338px] rounded-[16px] bg-white"></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="w-[315px] tabxl:w-[260px] h-[401px] tabxl:h-[338px] rounded-[16px] bg-white"></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="w-[315px] tabxl:w-[260px] h-[401px] tabxl:h-[338px] rounded-[16px] bg-white"></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="w-[315px] tabxl:w-[260px] h-[401px] tabxl:h-[338px] rounded-[16px] bg-white"></div>
-      </SwiperSlide>
+      {reviewsVedeoLinksList.map((link, idx) => (
+        <SwiperSlide key={idx}>
+          <ReactPlayer url={link} controls width="100%" height="100%" />
+        </SwiperSlide>
+      ))}
+      <div className="hidden tabxl:block absolute z-[5] -top-6 right-[-100px] w-[260px] h-[331px] bg-sliderGradient blur-lg"></div>
     </Swiper>
   );
 }
