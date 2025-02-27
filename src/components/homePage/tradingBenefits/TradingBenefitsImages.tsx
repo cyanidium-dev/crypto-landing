@@ -16,7 +16,7 @@ export default function TradingBenefitsImages() {
         alt="dollars"
         width="1920"
         height="676"
-        className="hidden tabxl:block absolute -z-50 top-4 left-0 h-[676px] object-cover object-left"
+        className="hidden tabxl:block absolute -z-50 top-4 left-0 w-full h-[676px] object-cover object-left"
       />
       <div className="absolute -z-20 top-[-73px] left-0 w-full h-[759px] tabxl:h-[829px] bg-afterSectionTopGradient"></div>
       <div className="absolute -z-30 left-0 bottom-0 tabxl:bottom-[-167px] w-full h-[266px] tabxl:h-[312px] bg-bottomGradient"></div>
