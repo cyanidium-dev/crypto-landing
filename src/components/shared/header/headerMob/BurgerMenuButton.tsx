@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import IconButton from "../../buttons/IconButton";
 import BurgerMenuIcon from "../../icons/BurgerMenuIcon";
 import CircleCloseIcon from "../../icons/CloseCircleIcon";
