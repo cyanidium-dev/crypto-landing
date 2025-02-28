@@ -10,6 +10,7 @@ export default function FooterInfo() {
         href={CYANIDIUM_URL}
         target="_blank"
         rel="noopener noreferrer nofollow"
+        className="active:scale-95 focus-visible:brightness-[140%] laptop:hover:brightness-[140%] transition duration-300 ease-out outline-none"
       >
         <p className="bg-clip-text text-transparent bg-redLightYellowGradient">
           made by cyanidium.dev{" "}
