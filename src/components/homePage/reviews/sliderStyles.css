@@ -23,6 +23,7 @@
 .swiper-button-prev {
   width: 50px;
   height: 50px;
+  transition: filter 300ms ease-out;
   @media screen and (min-width: 1024px) {
     width: 80px;
     height: 80px;
@@ -33,9 +34,12 @@
 }
 
 .swiper-button-next:active,
-.swiper-button-prev:active {
-  scale: 95%;
-  transition: scale 300ms ease-out;
+.swiper-button-prev:active,
+.swiper-button-next:focus-visible,
+.swiper-button-prev:focus-visible,
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  filter: brightness(1.4);
 }
 
 .swiper-button-prev::after {
