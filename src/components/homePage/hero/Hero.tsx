@@ -11,7 +11,6 @@ export default function Hero() {
     >
       <HeroImages />
       <div className="container max-w-[1920px]">
-        {" "}
         <h1 className="max-w-[682px] mx-auto tabxl:mx-0 mb-6 tabxl:mb-10 font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-58bold">
           Как поднять первую 1000$ на трейдинге
         </h1>
@@ -25,7 +24,7 @@ export default function Hero() {
             href={TELEGRAM_URL}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="block w-full tabxl:w-[196px] max-w-[331px] mx-auto tabxl:mx-0"
+            className="block w-full tabxl:w-[196px] max-w-[331px] mx-auto tabxl:mx-0 outline-none"
           >
             <MainButton>Подписаться</MainButton>
           </a>
