@@ -43,3 +43,7 @@
 .caviar-text-flow {
   @include textFlowAnimation(#f31260, #b39e00, anim-text-flow-caviar);
 }
+
+.pink-text-flow {
+  @include textFlowAnimation(#f31260, #a459ff, anim-text-flow-pink);
+}

@@ -1,16 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { useSplitText } from "@/hooks/useSplitText";
 
 export default function AnimatedText() {
   const text = "После";
-  const [letters, setLetters] = useState<string[]>([]);
+  const letters = useSplitText(text);
 
-  useEffect(() => {
-    const splitText = text
-      .split("")
-      .map((char) => (char === " " ? "\u00A0" : char)); // Заміна пробілів на неперервні пробіли
-    setLetters(splitText); // Розбиваємо текст на окремі літери і зберігаємо пробіли
-  }, []);
   return (
     <p
       className="w-fit px-1 tabxl:px-[10px] mb-3 tabxl:mb-0 mx-auto font-michelin uppercase text-center text-64bold tabxl:text-128bold 
