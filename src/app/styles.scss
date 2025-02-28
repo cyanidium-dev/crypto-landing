@@ -1,0 +1,45 @@
+/* Міксин для анімації */
+@mixin textFlowAnimation($startColor, $endColor, $animationName) {
+  $animationSteps: 20;
+  $animationDuration: 2;
+  $animationElement: span;
+  $animationElementsCount: 100;
+  $delayBetweenLetters: 0.2;
+
+  /* Налаштування елементів */
+  #{$animationElement} {
+    animation-name: #{$animationName};
+    animation-duration: #{$animationDuration}s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+
+  /* Ключові кадри з унікальним ім'ям */
+  @keyframes #{$animationName} {
+    @for $i from 0 through $animationSteps {
+      #{percentage($i * (1 / $animationSteps))} {
+        /* Перехід між кольорами через mix */
+        color: mix($startColor, $endColor, $i * (100 / $animationSteps));
+      }
+    }
+  }
+
+  /* Затримка анімації для кожної літери */
+  $totalDelayTime: $animationElementsCount * $delayBetweenLetters;
+
+  @for $i from 1 through $animationElementsCount {
+    #{$animationElement}:nth-of-type(#{$i}) {
+      animation-delay: #{($i * $delayBetweenLetters) - $totalDelayTime}s;
+    }
+  }
+}
+
+/* Для кожного компоненту використовуємо унікальне ім'я анімації */
+.light-pink-text-flow {
+  @include textFlowAnimation(#ff3279, #9173ff, anim-text-flow-light-pink);
+}
+
+.caviar-text-flow {
+  @include textFlowAnimation(#f31260, #b39e00, anim-text-flow-caviar);
+}

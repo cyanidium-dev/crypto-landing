@@ -1,7 +1,8 @@
+"use client";
 import MainButton from "@/components/shared/buttons/MainButton";
-import React from "react";
 import { TELEGRAM_URL } from "../../../../public/telegramChatLink";
 import HeroImages from "./HeroImages";
+import AnimatedSubtitle from "./AnimatedSubtitle";
 
 export default function Hero() {
   return (
@@ -29,9 +30,7 @@ export default function Hero() {
             <MainButton>Подписаться</MainButton>
           </a>
         </div>
-        <h3 className="w-fit tabxl:w-[566px] mx-auto tabxl:mr-0 tabxl:ml-auto font-michelin uppercase text-center text-18bold tabxl:text-32bold text-transparent bg-clip-text bg-lightPinkGradient">
-          Трейдинг – ваш путь к финансовой свободе
-        </h3>
+        <AnimatedSubtitle />
       </div>
     </section>
   );
