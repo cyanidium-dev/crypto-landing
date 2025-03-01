@@ -39,15 +39,6 @@ ul {
   padding: 0;
 }
 
-.no-scroll {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
 .glow-on-hover {
   position: relative;
   z-index: 0;
