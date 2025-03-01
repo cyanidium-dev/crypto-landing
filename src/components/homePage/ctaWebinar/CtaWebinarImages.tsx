@@ -1,17 +1,28 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeInAnimation } from "@/helpers/animation";
 
 export default function CtaWebinarImages() {
   return (
     <>
-      <Image
-        src="/images/contentImages/ctaWebinarMan.webp"
-        alt="man"
-        width={1342}
-        height={1671}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInAnimation({ x: 100 })}
         className="absolute -z-20 top-10 mobxl:top-[-60px] laptop:-top-[162px] -right-4 tabxl:-right-[28px] laptop:-right-[calc(-50%+550px+105px)] 
         h-[659px] laptop:h-[821px] w-auto object-cover overflow-visible"
-      />
+      >
+        <Image
+          src="/images/contentImages/ctaWebinarMan.webp"
+          alt="man"
+          width={1342}
+          height={1671}
+          className="w-auto h-full"
+        />
+      </motion.div>
+
       <Image
         src="/images/backgrounds/oneRowDollarsDesk.webp"
         alt="dollars"
