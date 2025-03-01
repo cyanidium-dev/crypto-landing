@@ -1,13 +1,31 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import MainButton from "@/components/shared/buttons/MainButton";
 import { TELEGRAM_URL } from "../../../../public/telegramChatLink";
 import HeroImages from "./HeroImages";
-import { fadeInAnimation } from "@/helpers/animation";
+
+const fadeInAnimation = ({ x = 0, y = 0, delay = 0, duration = 1 }) => ({
+  hidden: {
+    opacity: 0,
+    transform: `translate3d(${x}px, ${y}px, 0)`,
+    willChange: "opacity, transform",
+  },
+  visible: {
+    opacity: 1,
+    transform: "translate3d(0, 0, 0)",
+    transition: { duration, delay, ease: "easeOut" },
+  },
+});
 
 export default function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <section
       className="relative scroll-mt-[82px] tabxl:scroll-mt-[124px] pt-[325px] tabxl:pt-[129px] pb-14 
@@ -18,8 +36,7 @@ export default function Hero() {
       <div className="container max-w-[1920px]">
         <motion.h1
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          animate={isVisible ? "visible" : "hidden"}
           variants={fadeInAnimation({ x: 120, duration: 1.5 })}
           className="max-w-[682px] mx-auto tabxl:mx-0 mb-6 tabxl:mb-10 font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-58bold"
         >
@@ -28,8 +45,7 @@ export default function Hero() {
 
         <motion.div
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          animate={isVisible ? "visible" : "hidden"}
           variants={fadeInAnimation({ x: -80, delay: 0.8 })}
           className="tabxl:flex tabxl:flex-row-reverse tabxl:gap-x-[43px] tabxl:items-center tabxl:justify-start w-fit mb-9 tabxl:mb-[138px] mx-auto tabxl:mx-0"
         >
@@ -51,8 +67,7 @@ export default function Hero() {
 
         <motion.h3
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          animate={isVisible ? "visible" : "hidden"}
           variants={fadeInAnimation({ y: 20, delay: 2.4 })}
           className="w-fit tabxl:w-[566px] mx-auto tabxl:mr-0 tabxl:ml-auto font-michelin uppercase text-center text-18bold tabxl:text-32bold text-transparent bg-clip-text bg-lightPinkGradient"
         >
