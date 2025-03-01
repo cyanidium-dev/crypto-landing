@@ -1,8 +1,11 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import MainButton from "@/components/shared/buttons/MainButton";
 import { TELEGRAM_URL } from "../../../../public/telegramChatLink";
 import CtaSignUpImages from "./CtaSignUpImages";
 import Image from "next/image";
+import { fadeInAnimation } from "@/helpers/animation";
 
 export default function CtaSignUp() {
   return (
@@ -13,14 +16,32 @@ export default function CtaSignUp() {
     >
       <CtaSignUpImages />
       <div className="tabxl:flex tabxl:flex-row-reverse tabxl:items-center tabxl:justify-between container max-w-[1920px]">
-        <Image
-          src="/images/contentImages/ctaSignUpMan.webp"
-          alt="man in the sunglasses"
-          width={1028}
-          height={1232}
-          className="relative -z-30 w-auto h-[440px] tabxl:h-[616px] deskxl:h-[839px] mx-auto tabxl:mx-0 object-cover overflow-visible"
-        />
-        <div className="tabxl:w-[51.6%] laptop:w-[41.9%] desk:w-[50%] deskxl:w-[45%] mt-[103px] tabxl:mt-0">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInAnimation({
+            scale: 0.9,
+            duration: 0.8,
+            delay: 0.2,
+          })}
+        >
+          <Image
+            src="/images/contentImages/ctaSignUpMan.webp"
+            alt="man in the sunglasses"
+            width={1028}
+            height={1232}
+            className="relative -z-30 w-auto h-[440px] tabxl:h-[616px] deskxl:h-[839px] mx-auto tabxl:mx-0 object-cover overflow-visible"
+          />
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInAnimation({ x: -100 })}
+          className="tabxl:w-[51.6%] laptop:w-[41.9%] desk:w-[50%] deskxl:w-[45%] mt-[103px] tabxl:mt-0"
+        >
           <div className="max-w-[682px] desk:max-w-full mx-auto tabxl:mx-0">
             <h2 className="pr-2 mb-4 tabxl:mb-8 font-michelin uppercase text-24bold tabxl:text-36bold text-transparent bg-clip-text bg-pinkGradient">
               Присоединяйся сейчас и меняй свою жизнь!
@@ -39,7 +60,7 @@ export default function CtaSignUp() {
               <MainButton>Подписаться</MainButton>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 interface BenefitItemProps {
   item: {
@@ -6,17 +8,37 @@ interface BenefitItemProps {
   };
   variant?: "caviar" | "purple";
   className?: string;
+  onlyOpacity?: boolean;
 }
 
 export default function BulletedListItem({
   item,
   variant = "purple",
   className = "",
+  onlyOpacity,
 }: BenefitItemProps) {
   const { title } = item;
 
+  const itemVariants = {
+    hidden: { opacity: 0, x: 80 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5 },
+    },
+  };
+
+  const itemOpacityVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.5 },
+    },
+  };
+
   return (
-    <li
+    <motion.li
+      variants={onlyOpacity ? itemOpacityVariants : itemVariants}
       className={`flex justify-center items-center w-full tabxl:w-[357px] laptop:w-[447px] max-w-[331px] tabxl:max-w-[357px] laptop:max-w-[447px] p-[1px] rounded-full ${
         variant === "purple" ? "bg-purpleGradient" : "bg-caviarGradient"
       } ${className}`}
@@ -29,6 +51,6 @@ export default function BulletedListItem({
           </h3>
         </div>
       </div>
-    </li>
+    </motion.li>
   );
 }

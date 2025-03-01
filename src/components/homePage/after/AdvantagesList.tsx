@@ -1,5 +1,7 @@
 import BulletedListItem from "@/components/shared/bulletedListItem/BulletedListItem";
 import React from "react";
+import { motion } from "framer-motion";
+import { listVariants } from "@/helpers/animation";
 
 export default function AdvantagesList() {
   const advantagesList = [
@@ -18,10 +20,17 @@ export default function AdvantagesList() {
   ];
 
   return (
-    <ul className="flex flex-col sm:flex-row sm:flex-wrap tabxl:flex-col items-center gap-5 tabxl:gap-y-6 sm:justify-center">
+    <motion.ul
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      variants={listVariants}
+      transition={{ delay: 1.5 }}
+      className="flex flex-col sm:flex-row sm:flex-wrap tabxl:flex-col items-center gap-5 tabxl:gap-y-6 sm:justify-center"
+    >
       {advantagesList.map((advantage, idx) => (
         <BulletedListItem key={idx} item={advantage} variant="caviar" />
       ))}
-    </ul>
+    </motion.ul>
   );
 }

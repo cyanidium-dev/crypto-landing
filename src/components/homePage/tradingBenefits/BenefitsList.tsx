@@ -1,5 +1,16 @@
+"use client";
 import React from "react";
 import BenefitItem from "./BenefitItem";
+import { motion } from "framer-motion";
+
+const fadeInAnimation = (idx:number) => ({
+  hidden: { opacity: 0, y: idx % 2 === 0 ? -60 : 60 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.3, delay: idx * 0.2, ease: "easeOut" },
+  },
+});
 
 export default function BenefitsList() {
   const benefitsList = [
@@ -22,13 +33,18 @@ export default function BenefitsList() {
   ];
 
   return (
-    <ul
+    <motion.ul
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
       className="flex flex-col items-center gap-5 sm:flex-row sm:justify-center laptop:justify-between sm:flex-wrap laptop:flex-nowrap 
     max-w-[989px] laptop:max-w-[1100px] mx-auto"
     >
       {benefitsList.map((benefit, idx) => (
-        <BenefitItem key={idx} benefit={benefit} />
+        <motion.li key={idx} variants={fadeInAnimation(idx)}>
+          <BenefitItem benefit={benefit} />
+        </motion.li>
       ))}
-    </ul>
+    </motion.ul>
   );
 }

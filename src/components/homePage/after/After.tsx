@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import AdvantagesList from "./AdvantagesList";
 import AfterImages from "./AfterImages";
+import { fadeInAnimation } from "@/helpers/animation";
 
 export default function After() {
   return (
@@ -14,9 +17,15 @@ export default function After() {
           После
         </p>
         <div className="tabxl:flex tabxl:justify-between tabxl:items-center tabxl:mb-[60px]">
-          <h2 className="max-w-[682px] tabxl:w-[370px] desk:w-[520px] mx-auto tabxl:mx-0 mb-12 tabxl:mb-0 font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-40bold">
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInAnimation({ x: -100 })}
+            className="max-w-[682px] tabxl:w-[370px] desk:w-[520px] mx-auto tabxl:mx-0 mb-12 tabxl:mb-0 font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-40bold"
+          >
             Трейдинг – это не просто заработок, а путь к свободе!
-          </h2>
+          </motion.h2>
           <AdvantagesList />
         </div>
       </div>

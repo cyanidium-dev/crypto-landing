@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import DisadvantagesList from "./DisadvantagesList";
 import BeforeImages from "./BeforeImages";
+import { fadeInAnimation } from "@/helpers/animation";
 
 export default function Before() {
   return (
@@ -11,17 +14,26 @@ export default function Before() {
     >
       <BeforeImages />
       <div className="container max-w-[1920px]">
-        {" "}
-        <h2
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInAnimation({ y: 80, duration: 1 })}
           className="max-w-[342px] sm:max-w-[597px] tabxl:max-w-[597px] tabxl:ml-[19%] mb-[416px] tabxl:mb-[14px] mx-auto tabxl:mr-0 
       font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-40bold"
         >
           Моё «До» и «После» в трейдинге
-        </h2>
+        </motion.h2>
         <div className="tabxl:flex tabxl:gap-x-6 laptop:gap-x-[57px]">
-          <p className="tabxl:max-w-[263px] tabxl:mt-[22px] mb-12 tabxl:mb-0 tabxl:ml-auto text-14light tabxl:text-20light text-center tabxl:text-left">
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInAnimation({ scale: 0.7, delay: 2, duration:0.8 })}
+            className="tabxl:max-w-[263px] tabxl:mt-[22px] mb-12 tabxl:mb-0 tabxl:ml-auto text-14light tabxl:text-20light text-center tabxl:text-left"
+          >
             Вот как может выглядеть ваш путь от новичка до успешного трейдера.
-          </p>
+          </motion.p>
           <DisadvantagesList />
         </div>
       </div>

@@ -1,7 +1,11 @@
-import MainButton from "@/components/shared/buttons/MainButton";
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
+import MainButton from "@/components/shared/buttons/MainButton";
 import { TELEGRAM_URL } from "../../../../public/telegramChatLink";
 import HeroImages from "./HeroImages";
+import { fadeInAnimation } from "@/helpers/animation";
 
 export default function Hero() {
   return (
@@ -10,16 +14,31 @@ export default function Hero() {
     tabxl:pb-[61px] mb-6 tabxl:mb-[263px] overflow-x-clip"
     >
       <HeroImages />
+
       <div className="container max-w-[1920px]">
-        <h1 className="max-w-[682px] mx-auto tabxl:mx-0 mb-6 tabxl:mb-10 font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-58bold">
+        <motion.h1
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInAnimation({ x: 120, duration: 1.5 })}
+          className="max-w-[682px] mx-auto tabxl:mx-0 mb-6 tabxl:mb-10 font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-58bold"
+        >
           Как поднять первую 1000$ на трейдинге
-        </h1>
-        <div className="tabxl:flex tabxl:flex-row-reverse tabxl:gap-x-[43px] tabxl:items-center tabxl:justify-start w-fit mb-9 tabxl:mb-[138px] mx-auto tabxl:mx-0">
+        </motion.h1>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInAnimation({ x: -80, delay: 0.8 })}
+          className="tabxl:flex tabxl:flex-row-reverse tabxl:gap-x-[43px] tabxl:items-center tabxl:justify-start w-fit mb-9 tabxl:mb-[138px] mx-auto tabxl:mx-0"
+        >
           <p className="max-w-[682px] tabxl:w-[354px] mx-auto tabxl:mx-0 mb-[50px] tabxl:mb-0 text-16light text-center tabxl:text-left">
             Присоединяйся прямо сейчас и получай проверенные стратегии,
             аналитику, закрытые инсайды и поддержку, чтобы зарабатывать
             стабильно.
           </p>
+
           <a
             href={TELEGRAM_URL}
             target="_blank"
@@ -28,10 +47,17 @@ export default function Hero() {
           >
             <MainButton>Подписаться</MainButton>
           </a>
-        </div>
-        <h3 className="w-fit tabxl:w-[566px] mx-auto tabxl:mr-0 tabxl:ml-auto font-michelin uppercase text-center text-18bold tabxl:text-32bold text-transparent bg-clip-text bg-lightPinkGradient">
+        </motion.div>
+
+        <motion.h3
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInAnimation({ y: 20, delay: 2.4 })}
+          className="w-fit tabxl:w-[566px] mx-auto tabxl:mr-0 tabxl:ml-auto font-michelin uppercase text-center text-18bold tabxl:text-32bold text-transparent bg-clip-text bg-lightPinkGradient"
+        >
           Трейдинг – ваш путь к финансовой свободе
-        </h3>
+        </motion.h3>
       </div>
     </section>
   );
