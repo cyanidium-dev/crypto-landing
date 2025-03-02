@@ -25,7 +25,7 @@ export default function AdvantagesList() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
       variants={listVariants}
-      transition={{ delay: 1.5 }}
+      transition={{ delay: 3.5 }}
       className="flex flex-col sm:flex-row sm:flex-wrap tabxl:flex-col items-center gap-5 tabxl:gap-y-6 sm:justify-center"
     >
       {advantagesList.map((advantage, idx) => (

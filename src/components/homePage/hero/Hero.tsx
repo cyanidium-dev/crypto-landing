@@ -5,19 +5,7 @@ import { motion } from "framer-motion";
 import MainButton from "@/components/shared/buttons/MainButton";
 import { TELEGRAM_URL } from "../../../../public/telegramChatLink";
 import HeroImages from "./HeroImages";
-
-const fadeInAnimation = ({ x = 0, y = 0, delay = 0, duration = 1 }) => ({
-  hidden: {
-    opacity: 0,
-    transform: `translate3d(${x}px, ${y}px, 0)`,
-    willChange: "opacity, transform",
-  },
-  visible: {
-    opacity: 1,
-    transform: "translate3d(0, 0, 0)",
-    transition: { duration, delay, ease: "easeOut" },
-  },
-});
+import { fadeInAnimation } from "@/helpers/animation";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);

@@ -21,13 +21,13 @@ export default function CtaSignUp() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInAnimation({
-            scale: 0.9,
+            x: 120, y:-60,
             duration: 0.8,
-            delay: 0.2,
+            delay: 0.5,
           })}
         >
           <Image
-            src="/images/contentImages/ctaSignUpMan.webp"
+            src="/images/contentImages/manWithText.webp"
             alt="man in the sunglasses"
             width={1028}
             height={1232}
