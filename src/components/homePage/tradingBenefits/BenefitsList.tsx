@@ -3,7 +3,7 @@ import React from "react";
 import BenefitItem from "./BenefitItem";
 import { motion } from "framer-motion";
 
-const fadeInAnimation = (idx:number) => ({
+const fadeInAnimation = (idx: number) => ({
   hidden: { opacity: 0, y: idx % 2 === 0 ? -60 : 60 },
   visible: {
     opacity: 1,
@@ -41,7 +41,11 @@ export default function BenefitsList() {
     max-w-[989px] laptop:max-w-[1100px] mx-auto"
     >
       {benefitsList.map((benefit, idx) => (
-        <motion.li key={idx} variants={fadeInAnimation(idx)}>
+        <motion.li
+          key={idx}
+          variants={fadeInAnimation(idx)}
+          className="flex justify-center items-center w-full max-w-[331px] laptop:max-w-[260px] h-[203px] p-[1px] rounded-[24px] bg-caviarGradient"
+        >
           <BenefitItem benefit={benefit} />
         </motion.li>
       ))}
