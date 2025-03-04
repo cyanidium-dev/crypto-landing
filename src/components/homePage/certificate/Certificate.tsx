@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInAnimation } from "@/helpers/animation";
+import CertificateSlider from "./CertificateSlider";
 
 export default function Certificate() {
   return (
@@ -11,7 +12,7 @@ export default function Certificate() {
       className="relative scroll-mt-[82px] tabxl:scroll-mt-[124px] py-[60px] laptop:py-[93px] mb-[123px] laptop:mb-14 overflow-x-clip"
     >
       <div className="hidden tabxl:block absolute -z-10 top-[204px] left-[-355px] w-[404px] h-[240px] rounded-full bg-purple blur-[250px]"></div>
-      <div className="container max-w-[1920px] flex flex-col tabxl:flex-row tabxl:justify-between tabxl:items-center gap-y-[116px] tabxl:gap-x-[80px]">
+      <div className="container max-w-[1920px] flex flex-col tabxl:flex-row tabxl:justify-between tabxl:items-center mb-[116px] tabxl:gap-x-[80px]">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -29,7 +30,8 @@ export default function Certificate() {
             подтверждение профессионализма
           </p>
         </motion.div>
-        <motion.div
+
+        {/* <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -43,8 +45,9 @@ export default function Certificate() {
             height={1414}
             className="rounded-[12px]"
           />
-        </motion.div>
+        </motion.div> */}
       </div>
+      <CertificateSlider />
     </section>
   );
 }

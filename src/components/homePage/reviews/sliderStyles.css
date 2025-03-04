@@ -19,6 +19,17 @@
   }
 }
 
+.certificateSlider .swiper-slide {
+  width: 315px;
+  height: 240px !important;
+  border-radius: 12px;
+  overflow: hidden;
+  @media screen and (min-width: 1024px) {
+    width: 260px;
+    height: 331px;
+  }
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   width: 50px;
