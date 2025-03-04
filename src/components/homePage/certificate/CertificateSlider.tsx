@@ -30,7 +30,7 @@ export default function CertificateSlider() {
       className="certificateSlider"
     >
       <SwiperSlide>
-        <div className="w-full h-full max-w-[540px] tabxl:max-w-full tabxl:w-[49.1%] mx-auto tabxl:mx-0 p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
+        <div className="w-full h-full p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
           <Image
             src="/images/contentImages/certificate.webp"
             alt="certificate"
@@ -41,29 +41,29 @@ export default function CertificateSlider() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="max-w-[540px] tabxl:max-w-full tabxl:w-[49.1%] mx-auto tabxl:mx-0 p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
+        <div className="w-full h-full p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
           <Image
             src="/images/contentImages/certificate2.webp"
             alt="certificate"
             width={2048}
             height={1578}
-            className="rounded-[12px]"
+            className="w-full h-full rounded-[12px] object-cover"
           />
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="max-w-[540px] tabxl:max-w-full tabxl:w-[49.1%] mx-auto tabxl:mx-0 p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
+        <div className="w-full h-full p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
           <Image
             src="/images/contentImages/certificate3.webp"
             alt="certificate"
             width={1149}
             height={878}
-            className="rounded-[12px]"
+            className="w-full h-full rounded-[12px] object-cover"
           />
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-full h-full max-w-[540px] tabxl:max-w-full tabxl:w-[49.1%] mx-auto tabxl:mx-0 p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
+        <div className="w-full h-full p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
           <Image
             src="/images/contentImages/certificate.webp"
             alt="certificate"
@@ -74,24 +74,24 @@ export default function CertificateSlider() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="max-w-[540px] tabxl:max-w-full tabxl:w-[49.1%] mx-auto tabxl:mx-0 p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
+        <div className="w-full h-full p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
           <Image
             src="/images/contentImages/certificate2.webp"
             alt="certificate"
             width={2048}
             height={1578}
-            className="rounded-[12px]"
+            className="w-full h-full rounded-[12px] object-cover"
           />
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="max-w-[540px] tabxl:max-w-full tabxl:w-[49.1%] mx-auto tabxl:mx-0 p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
+        <div className="w-full h-full p-[1px] rounded-[12px] bg-caviarGradient overflow-hidden">
           <Image
             src="/images/contentImages/certificate3.webp"
             alt="certificate"
             width={1149}
             height={878}
-            className="rounded-[12px]"
+            className="w-full h-full rounded-[12px] object-cover"
           />
         </div>
       </SwiperSlide>
