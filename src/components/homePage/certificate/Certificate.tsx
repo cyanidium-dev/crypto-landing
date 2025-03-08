@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInAnimation } from "@/helpers/animation";
 import CertificateSlider from "./CertificateSlider";
@@ -11,6 +11,20 @@ export default function Certificate() {
       className="relative scroll-mt-[82px] tabxl:scroll-mt-[124px] py-[60px] laptop:py-[93px] mb-[123px] laptop:mb-14 overflow-x-clip"
     >
       <div className="hidden tabxl:block absolute -z-10 top-[204px] left-[-355px] w-[404px] h-[240px] rounded-full bg-purple blur-[250px]"></div>
+      <Image
+        src="/images/icons/dollar.svg"
+        alt="dollar"
+        width="66"
+        height="110"
+        className="absolute bottom-0 left-5 tabxl:left-[494px] desk:left-[584px] z-10 w-[74px] tabxl:w-[118px] h-auto"
+      />
+      <Image
+        src="/images/icons/dollar.svg"
+        alt="dollar"
+        width="66"
+        height="110"
+        className="absolute bottom-7 tabxl:bottom-12 left-[102px] tabxl:left-[630px] desk:left-[720px] z-10 w-[37px] tabxl:w-[59px] h-auto"
+      />
       <div className="tabxl:flex flex-col tabxl:flex-row tabxl:justify-between tabxl:items-center tabxl:gap-x-[80px]">
         <motion.div
           initial="hidden"
@@ -24,7 +38,7 @@ export default function Certificate() {
           </h2>
           <p
             className="mb-[116px] tabxl:mb-0 font-michelin uppercase text-center tabxl:text-left text-20bold tabxl:text-24bold text-transparent bg-clip-text 
-        bg-purpleGradient"
+        bg-certificateTextGradient"
           >
             подтверждение профессионализма
           </p>
