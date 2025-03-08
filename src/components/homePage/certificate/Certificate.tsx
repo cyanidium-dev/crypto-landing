@@ -11,20 +11,36 @@ export default function Certificate() {
       className="relative scroll-mt-[82px] tabxl:scroll-mt-[124px] py-[60px] laptop:py-[93px] mb-[123px] laptop:mb-14 overflow-x-clip"
     >
       <div className="hidden tabxl:block absolute -z-10 top-[204px] left-[-355px] w-[404px] h-[240px] rounded-full bg-purple blur-[250px]"></div>
-      <Image
-        src="/images/icons/dollar.svg"
-        alt="dollar"
-        width="66"
-        height="110"
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInAnimation({ scale: 0.8, duration: 1.5, delay: 0.8 })}
         className="absolute bottom-0 left-5 tabxl:left-[494px] desk:left-[584px] z-10 w-[74px] tabxl:w-[118px] h-auto"
-      />
-      <Image
-        src="/images/icons/dollar.svg"
-        alt="dollar"
-        width="66"
-        height="110"
+      >
+        <Image
+          src="/images/icons/dollar.svg"
+          alt="dollar"
+          width="66"
+          height="110"
+          className="w-full h-full"
+        />
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInAnimation({ scale: 0.8, duration: 1.5, delay: 0.8 })}
         className="absolute bottom-7 tabxl:bottom-12 left-[102px] tabxl:left-[630px] desk:left-[720px] z-10 w-[37px] tabxl:w-[59px] h-auto"
-      />
+      >
+        <Image
+          src="/images/icons/dollar.svg"
+          alt="dollar"
+          width="66"
+          height="110"
+          className="w-full h-full"
+        />
+      </motion.div>
       <div className="tabxl:flex flex-col tabxl:flex-row tabxl:justify-between tabxl:items-center tabxl:gap-x-[80px]">
         <motion.div
           initial="hidden"

@@ -21,23 +21,6 @@ export default function AfterImages() {
           className="w-full h-auto"
         />
       </motion.div>
-      {/* <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-         variants={fadeInAnimation({ scale:0.8 })}
-        className="hidden tabxl:block absolute -z-30 top-0 left-[calc(50%-360px)] deskxl:left-[calc(50%-430px)] 
-    tabxl:w-[710px] deskxl:w-[860px] h-auto"
-      >
-        <Image
-          src="/images/contentImages/afterManDesk.webp"
-          alt="man"
-          width={1422}
-          height={1439}
-          className="w-full h-auto"
-        />
-      </motion.div> */}
-
       <Image
         src="/images/backgrounds/afterSection/dollarMob.webp"
         alt="dollars"

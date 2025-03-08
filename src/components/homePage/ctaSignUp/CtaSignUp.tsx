@@ -44,13 +44,18 @@ export default function CtaSignUp() {
           className="tabxl:w-[51.6%] laptop:w-[41.9%] desk:w-[50%] deskxl:w-[45%] mt-[103px] tabxl:mt-0"
         >
           <div className="max-w-[682px] desk:max-w-full mx-auto tabxl:mx-0">
-            <h2 className="pr-2 mb-4 tabxl:mb-8 font-michelin uppercase text-24bold tabxl:text-36bold text-transparent bg-clip-text bg-pinkGradient">
+            <h2
+              className="pr-2 mb-4 tabxl:mb-8 font-michelin uppercase text-24bold tabxl:text-36bold text-transparent bg-clip-text 
+            text-center tabxl:text-left bg-ctaSignUpTextGradient"
+            >
               Присоединяйся сейчас и меняй свою жизнь!
             </h2>
-            <p className="mb-7 tabxl:mb-10 text-14light tabxl:text-20light">
+            <p className="mb-4 tabxl:mb-10 text-14light tabxl:text-20light text-center tabxl:text-left">
               Подпишись на наш Telegram и начни зарабатывать на трейдинге уже
-              сегодня. Готовые стратегии, разбор сделок и обучение – всё
-              бесплатно!
+              сегодня.
+            </p>
+            <p className="mb-4 tabxl:mb-10 font-michelin text-16bold tabxl:text-24bold uppercase text-center tabxl:text-left">
+              Мы заработаем только после того как заработаете вы!
             </p>
             <a
               href={TELEGRAM_URL}
