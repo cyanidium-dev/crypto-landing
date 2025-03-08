@@ -88,6 +88,7 @@ export default {
           "linear-gradient(90.44deg, #DBEAFF 0.38%, #12DAF2 103.92%)",
         heroTextGradient:
           "linear-gradient(90.44deg, #075ACA 0.38%, #12DAF2 103.92%)",
+          benefitsTextGradient: "linear-gradient(90.44deg, #E2EFFF 0.38%, #12DAF2 103.92%)"
       },
     },
   },

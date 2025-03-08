@@ -16,9 +16,9 @@ export default function TradingBenefits() {
         </h2>
         <p
           className="w-fit pr-2 mx-auto mb-[50px] tabxl:mb-[68px] font-michelin uppercase text-24bold tabxl:text-32bold text-transparent 
-      bg-clip-text bg-caviarGradient text-center"
+      bg-clip-text bg-benefitsTextGradient text-center"
         >
-          Почему это выгодно?
+          Подпишись и начни зарабатывать
         </p>
         <BenefitsList />
       </div>
