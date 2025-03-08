@@ -38,11 +38,13 @@ export default {
         "14bold": ["14px", { lineHeight: "16.81px", fontWeight: "700" }],
         "16light": ["16px", { lineHeight: "18.78px", fontWeight: "300" }],
         "16reg": ["16px", { lineHeight: "18.78px", fontWeight: "400" }],
+        "16med": ["16px", { lineHeight: "18.78px", fontWeight: "500" }],
         "16bold": ["16px", { lineHeight: "19.22px", fontWeight: "700" }],
         "18light": ["18px", { lineHeight: "21.13px", fontWeight: "300" }],
         "18bold": ["18px", { lineHeight: "21.62px", fontWeight: "700" }],
         "20light": ["20px", { lineHeight: "23.48px", fontWeight: "300" }],
         "20reg": ["20px", { lineHeight: "24.38px", fontWeight: "400" }],
+        "20med": ["20px", { lineHeight: "24.38px", fontWeight: "500" }],
         "20bold": ["20px", { lineHeight: "24.02px", fontWeight: "700" }],
         "24bold": ["24px", { lineHeight: "28.82px", fontWeight: "700" }],
         "32bold": ["32px", { lineHeight: "38.43px", fontWeight: "700" }],
@@ -69,8 +71,6 @@ export default {
           "linear-gradient(91.81deg, #FF3279 1.53%, #9173FF 112.76%)",
         logoGradient:
           "linear-gradient(95.63deg, #F54180 -14.26%, #FFE83B 295.34%)",
-        redYellowGradient:
-          "linear-gradient(94.6deg, #F54180 3.73%, #FFE204 142.88%)",
         redLightYellowGradient:
           "linear-gradient(95.46deg, #F31260 -78.11%, #FFEA4D 92.68%)",
         signUpTextGradient: "linear-gradient(90deg, #FF3995 0%, #E7FF2E 100%)",
@@ -80,6 +80,12 @@ export default {
           "linear-gradient(to top, #060113 22.36%, rgba(6, 1, 19, 0) 113.22%)",
         sliderGradient:
           "linear-gradient(to right, rgba(0, 0, 0, 0) -35.77%, #000000 64.42%)",
+        buttonBgGradient:
+          "linear-gradient(94.6deg, #12DDF3 3.73%, #000FB3 142.88%)",
+        buttonBorderGradient:
+          "linear-gradient(90.44deg, #075ACA 0.38%, #12DAF2 103.92%)",
+        headerButtonGradient:
+          "linear-gradient(90.44deg, #DBEAFF 0.38%, #12DAF2 103.92%)",
       },
     },
   },

@@ -47,7 +47,7 @@ export default function Hero() {
             href={TELEGRAM_URL}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="block w-full tabxl:w-[196px] max-w-[331px] mx-auto tabxl:mx-0 outline-none"
+            className="block w-full tabxl:w-[592px] max-w-[592px] mx-auto tabxl:mx-0 outline-none"
           >
             <MainButton>Подписаться</MainButton>
           </a>
