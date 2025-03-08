@@ -57,6 +57,21 @@ export default function HeroImages() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInAnimation({ scale: 0.8, delay: 1.6 })}
+        className="absolute top-[78px] tabxl:top-[65px] left-[calc(50%-232px) tabxl:left-auto tabxl:right-[2px] -z-[35] rotate-[3.4deg] w-[489px] h-[364px]"
+      >
+        <Image
+          src="/images/backgrounds/heroSection/banknotes.webp"
+          alt="banknotes"
+          width={1342}
+          height={1671}
+        />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInAnimation({ scale: 0.8, delay: 1.6 })}
         className="absolute -z-30 -top-[119px] tabxl:top-[-139px] w-[473px] tabxl:w-[671px] h-[589px] tabxl:h-[835px] 
           left-[calc(50%-237px+17px)] tabxl:left-auto tabxl:right-[-20px] overflow-visible"
       >
