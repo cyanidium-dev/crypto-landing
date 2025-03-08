@@ -71,8 +71,6 @@ export default {
           "linear-gradient(91.81deg, #FF3279 1.53%, #9173FF 112.76%)",
         logoGradient:
           "linear-gradient(95.63deg, #F54180 -14.26%, #FFE83B 295.34%)",
-        redYellowGradient:
-          "linear-gradient(94.6deg, #F54180 3.73%, #FFE204 142.88%)",
         redLightYellowGradient:
           "linear-gradient(95.46deg, #F31260 -78.11%, #FFEA4D 92.68%)",
         signUpTextGradient: "linear-gradient(90deg, #FF3995 0%, #E7FF2E 100%)",
@@ -86,6 +84,8 @@ export default {
           "linear-gradient(94.6deg, #12DDF3 3.73%, #000FB3 142.88%)",
         buttonBorderGradient:
           "linear-gradient(90.44deg, #075ACA 0.38%, #12DAF2 103.92%)",
+        headerButtonGradient:
+          "linear-gradient(90.44deg, #DBEAFF 0.38%, #12DAF2 103.92%)",
       },
     },
   },
