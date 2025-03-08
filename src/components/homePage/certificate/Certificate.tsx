@@ -24,7 +24,7 @@ export default function Certificate() {
           </h2>
           <p
             className="mb-[116px] tabxl:mb-0 font-michelin uppercase text-center tabxl:text-left text-20bold tabxl:text-24bold text-transparent bg-clip-text 
-        bg-purpleGradient"
+        bg-certificateTextGradient"
           >
             подтверждение профессионализма
           </p>
