@@ -39,31 +39,36 @@ export default function Hero() {
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
           variants={fadeInAnimation({ x: -80, delay: 0.8 })}
-          className="tabxl:flex tabxl:flex-row-reverse tabxl:gap-x-[43px] tabxl:items-center tabxl:justify-start w-fit mb-9 tabxl:mb-[138px] mx-auto tabxl:mx-0"
+          className="tabxl:flex tabxl:flex-row-reverse tabxl:gap-x-[43px] tabxl:items-center tabxl:justify-start w-fit mb-9 tabxl:mb-[66px] mx-auto tabxl:mx-0"
         >
-          <p className="max-w-[682px] tabxl:w-[354px] mx-auto tabxl:mx-0 mb-[50px] tabxl:mb-0 text-16light text-center tabxl:text-left">
-            Присоединяйся прямо сейчас и получай проверенные стратегии,
-            аналитику, закрытые инсайды и поддержку, чтобы зарабатывать
-            стабильно.
-          </p>
-
-          <a
-            href={TELEGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            className="block w-full tabxl:w-[592px] max-w-[592px] mx-auto tabxl:mx-0 outline-none"
-          >
-            <MainButton>Подписаться</MainButton>
-          </a>
+          {" "}
+          <div>
+            <p className="max-w-[682px] tabxl:w-[649px] mx-auto tabxl:mx-0 mb-[50px] tabxl:mb-[34px] text-16light text-center tabxl:text-left">
+              Присоединяйся прямо сейчас и получай проверенные стратегии,
+              аналитику, закрытые инсайды и поддержку, чтобы зарабатывать
+              стабильно.
+            </p>{" "}
+            <a
+              href={TELEGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="block w-full tabxl:w-[592px] max-w-[592px] mx-auto tabxl:mx-0 outline-none"
+            >
+              <MainButton>Подписаться</MainButton>
+            </a>
+            <h2 className="max-w-[592px] mt-7 font-michelin text-16bold tabxl:text-24bold text-center">
+              Подпишись и получи деньги
+            </h2>
+          </div>
         </motion.div>
 
         <motion.h3
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
           variants={fadeInAnimation({ y: 20, delay: 2.4 })}
-          className="w-fit tabxl:w-[566px] mx-auto tabxl:mr-0 tabxl:ml-auto font-michelin uppercase text-center text-18bold tabxl:text-32bold text-transparent bg-clip-text bg-lightPinkGradient"
+          className="w-fit tabxl:w-[593px] mx-auto tabxl:mr-0 tabxl:ml-auto font-michelin uppercase text-center tabxl:text-left text-18bold tabxl:text-32bold text-transparent bg-clip-text bg-lightPinkGradient"
         >
-          Трейдинг – ваш путь к финансовой свободе
+          Трейдинг – твой Стабильный заработок
         </motion.h3>
       </div>
     </section>
