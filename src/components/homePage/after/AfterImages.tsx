@@ -4,25 +4,24 @@ import { motion } from "framer-motion";
 import { fadeInAnimation } from "@/helpers/animation";
 
 export default function AfterImages() {
-
   return (
     <>
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-         variants={fadeInAnimation({ scale: 0.8, duration:1.5})}
-        className="tabxl:hidden absolute -z-20 top-[61px] left-[calc(50%-187.5px)] max-w-[375px] mx-auto"
+        variants={fadeInAnimation({ scale: 0.8, duration: 1.5 })}
+        className="absolute -z-20 top-[69px] tabxl:top-[70px] left-[calc(50%-161px)] tabxl:left-[calc(50%-287px)] max-w-[375px] tabxl:max-w-[553px] mx-auto w-[321px] h-[428px] tabxl:w-[553px] tabxl:h-[737px]"
       >
         <Image
-          src="/images/contentImages/afterManMob.webp"
+          src="/images/contentImages/afterMan.webp"
           alt="man"
-          width={750}
-          height={933}
+          width={1107}
+          height={1474}
           className="w-full h-auto"
         />
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -37,7 +36,7 @@ export default function AfterImages() {
           height={1439}
           className="w-full h-auto"
         />
-      </motion.div>
+      </motion.div> */}
 
       <Image
         src="/images/backgrounds/afterSection/dollarMob.webp"

@@ -1,5 +1,4 @@
 import BulletedListItem from "@/components/shared/bulletedListItem/BulletedListItem";
-import React from "react";
 import { motion } from "framer-motion";
 import { listVariants } from "@/helpers/animation";
 
