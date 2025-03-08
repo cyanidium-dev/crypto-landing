@@ -28,7 +28,11 @@ export default function Hero() {
           variants={fadeInAnimation({ x: 120, duration: 1.5 })}
           className="max-w-[682px] mx-auto tabxl:mx-0 mb-6 tabxl:mb-10 font-michelin uppercase text-center tabxl:text-left text-24bold tabxl:text-58bold"
         >
-          Как поднять первую 1000$ на трейдинге
+          Как поднять первую{" "}
+          <span className="bg-heroTextGradient bg-clip-text text-transparent">
+            1000$
+          </span>{" "}
+          на трейдинге
         </motion.h1>
 
         <motion.div
