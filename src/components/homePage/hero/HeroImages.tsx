@@ -27,13 +27,14 @@ export default function HeroImages() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInAnimation({ scale: 0.9, delay: 0.3, duration: 1.2 })}
-        className="tabxl:hidden absolute -z-[40] left-1 top-[-161px] h-[443px] overflow-visible"
+        className="tabxl:hidden absolute -z-[40] left-1 top-[-161px] w-full h-[443px] overflow-visible"
       >
         <Image
           src="/images/backgrounds/heroSection/dollarsMob.webp"
           alt="dollars"
           width={1028}
           height={443}
+          className="w-full h-full object-cover"
         />
       </motion.div>
 
@@ -49,6 +50,21 @@ export default function HeroImages() {
           alt="dollars"
           width={680}
           height={559}
+        />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInAnimation({ x: 120, duration: 1.5, delay: 2.4 })}
+        className="absolute top-[78px] tabxl:top-[65px] left-[calc(50%-232px)] tabxl:left-auto tabxl:right-[2px] -z-[35] rotate-[3.4deg] w-[489px] h-[364px]"
+      >
+        <Image
+          src="/images/backgrounds/heroSection/banknotes.webp"
+          alt="banknotes"
+          width={1342}
+          height={1671}
         />
       </motion.div>
 
