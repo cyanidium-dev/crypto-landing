@@ -92,6 +92,8 @@ export default {
           "linear-gradient(90.44deg, #E2EFFF 0.38%, #12DAF2 103.92%)",
         certificateTextGradient:
           "linear-gradient(90.73deg, #E0EDFF -23.4%, #12DAF2 103.99%)",
+        ctaWebinarTextGradient:
+          "linear-gradient(90.44deg, #D9E9FF 0.38%, #12DAF2 103.92%)",
       },
     },
   },

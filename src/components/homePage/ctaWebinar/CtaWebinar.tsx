@@ -19,7 +19,7 @@ export default function CtaWebinar() {
           viewport={{ once: true }}
           variants={fadeInAnimation({ x: -100 })}
           className="max-w-[331px] sm:max-w-[472px] tabxl:max-w-[744px] mb-3 font-michelin uppercase text-24bold tabxl:text-40bold text-transparent 
-        bg-clip-text bg-caviarGradient"
+        bg-clip-text bg-ctaWebinarTextGradient"
         >
           залетай в мой канал и посети бесплатный вебинар по основам трейдинга
         </motion.h2>
