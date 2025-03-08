@@ -21,7 +21,8 @@ export default function CtaSignUp() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInAnimation({
-            x: 120, y:-60,
+            x: 120,
+            y: -60,
             duration: 0.8,
             delay: 0.5,
           })}
@@ -55,7 +56,7 @@ export default function CtaSignUp() {
               href={TELEGRAM_URL}
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="block w-full tabxl:w-[196px] max-w-[331px] mx-auto tabxl:mx-0 outline-none"
+              className="block w-full max-w-[461px] mx-auto tabxl:mx-0 outline-none"
             >
               <MainButton>Подписаться</MainButton>
             </a>

@@ -1,6 +1,6 @@
-import React from "react";
-import SignUpButton from "./SignUpButton";
 import CountdownTimer from "./CountdownTimer";
+import MainButton from "@/components/shared/buttons/MainButton";
+import { TELEGRAM_URL } from "../../../../public/telegramChatLink";
 
 export default function OpenTelegramChat() {
   return (
@@ -12,7 +12,14 @@ export default function OpenTelegramChat() {
         после доступ будет стоить 99$
       </p>
       <CountdownTimer />
-      <SignUpButton />
+      <a
+        href={TELEGRAM_URL}
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        className="block w-full tabxl:w-[592px] max-w-[461px] mx-auto outline-none"
+      >
+        <MainButton>Подписаться</MainButton>
+      </a>
     </div>
   );
 }
