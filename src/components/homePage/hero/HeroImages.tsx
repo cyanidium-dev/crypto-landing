@@ -57,7 +57,7 @@ export default function HeroImages() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={fadeInAnimation({ x: 120, duration: 1.5, delay: 2.4 })}
+        variants={fadeInAnimation({ scale: 0.9, duration: 1.5, delay: 2.4 })}
         className="absolute top-[78px] tabxl:top-[65px] left-[calc(50%-232px)] tabxl:left-auto tabxl:right-[2px] -z-[35] rotate-[3.4deg] w-[489px] h-[364px]"
       >
         <Image
