@@ -12,13 +12,29 @@ export default function ReviewsImages() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInAnimation({ scale: 0.8 })}
-        className="absolute -z-20 -top-4 tabxl:top-[137px] left-[calc(50%-322px+12px)] tabxl:-left-[90px] w-[644px] max-w-[644px] h-[483px] object-cover origin-center overflow-visible"
+        className="absolute -z-20 -top-4 tabxl:top-[137px] left-[calc(50%-200px)] tabxl:left-[0px] w-[484px] h-[551px] object-cover origin-center overflow-visible"
       >
         <Image
           src="/images/contentImages/reviewsMan.webp"
           alt="man"
-          width={1024}
-          height={768}
+          width={969}
+          height={1102}
+          className="w-full h-auto"
+        />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInAnimation({ scale: 0.8 })}
+        className="absolute left-[calc(50%+16px)] tabxl:left-[130px] bottom-[670px] tabxl:bottom-[150px] z-10 w-[85px] tabxl:w-[158px] h-auto  will-change-transform"
+      >
+        <Image
+          src="/images/contentImages/dollarsReviews.webp"
+          alt="dollars"
+          width={316}
+          height={434}
           className="w-full h-full"
         />
       </motion.div>
