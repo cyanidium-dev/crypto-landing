@@ -15,7 +15,7 @@ export default function CtaSignUp() {
   mb-[73px] laptop:mb-[188px] overflow-x-clip"
     >
       <CtaSignUpImages />
-      <div className="tabxl:flex tabxl:flex-row-reverse tabxl:items-center tabxl:justify-between container max-w-[1920px]">
+      <div className="relative w-full tabxl:flex tabxl:flex-row-reverse tabxl:items-center tabxl:justify-between">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -30,9 +30,9 @@ export default function CtaSignUp() {
           <Image
             src="/images/contentImages/manWithText.webp"
             alt="man in the sunglasses"
-            width={1028}
-            height={1232}
-            className="relative -z-30 w-auto h-[440px] tabxl:h-[616px] deskxl:h-[839px] mx-auto tabxl:mx-0 object-cover overflow-visible"
+            width={1318}
+            height={1383}
+            className="relative -z-30 w-full max-w-[637px] tabxl:w-auto tabxl:max-w-full tabxl:h-[616px] desk:h-[720px] deskxl:h-[839px] ml-auto tabxl:mx-0 object-cover overflow-visible"
           />
         </motion.div>
 
@@ -41,9 +41,9 @@ export default function CtaSignUp() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInAnimation({ x: -100 })}
-          className="tabxl:w-[51.6%] laptop:w-[41.9%] desk:w-[50%] deskxl:w-[45%] mt-[103px] tabxl:mt-0"
+          className="tabxl:w-[51.6%] laptop:w-[41.9%] desk:w-[50%] deskxl:w-[45%] mt-[73px] tabxl:mt-0"
         >
-          <div className="max-w-[682px] desk:max-w-full mx-auto tabxl:mx-0">
+          <div className="px-[22px] md:px-[30px] tabxl:pr-0 xl:pl-[90px] max-w-[682px] desk:max-w-full mx-auto tabxl:mx-0">
             <h2
               className="pr-2 mb-4 tabxl:mb-8 font-michelin uppercase text-24bold tabxl:text-36bold text-transparent bg-clip-text 
             text-center tabxl:text-left bg-ctaSignUpTextGradient"
@@ -55,7 +55,7 @@ export default function CtaSignUp() {
               сегодня.
             </p>
             <p className="mb-4 tabxl:mb-10 font-michelin text-16bold tabxl:text-24bold uppercase text-center tabxl:text-left">
-              Мы заработаем только после того как заработаете вы!
+              Мы заработаем только после того, как заработаете вы!
             </p>
             <a
               href={TELEGRAM_URL}
