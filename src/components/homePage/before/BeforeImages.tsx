@@ -12,15 +12,29 @@ export default function BeforeImages() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInAnimation({ x: -80, delay: 0.2 })}
-        className="absolute -z-20 top-[137px] sm:top-[72px] tabxl:top-6 left-[29px] mobxl:left-[calc(50%-228px)] tabxl:left-[-91px] desk:left-[-21px] w-[514px] h-[385px] tabxl:w-[799px] deskxl:w-[900px] tabxl:h-[599px] deskxl:h-[677px] 
+        className="absolute -z-20 top-[137px] sm:top-[72px] tabxl:top-0 left-[29px] mobxl:left-[calc(50%-228px)] tabxl:left-[-91px] desk:left-[-21px] w-[657px] h-[420px] tabxl:w-[799px] deskxl:w-[900px] tabxl:h-[599px] deskxl:h-[677px] 
         object-cover origin-left overflow-visible"
       >
         <Image
-          src="/images/contentImages/beforeMan.webp"
+          src="/images/contentImages/beforeManMob.webp"
           alt="man"
-          width={1598}
-          height={1198}
-          className="w-full h-full"
+          width={750}
+          height={840}
+          className="tabxl:hidden w-[375px] h-auto"
+        />
+        <Image
+          src="/images/contentImages/beforeManDesk.webp"
+          alt="man"
+          width={879}
+          height={1194}
+          className="hidden tabxl:block w-[440px] desk:w-[640px] h-auto"
+        />
+        <Image
+          src="/images/contentImages/banknotesBefore.webp"
+          alt="banknotes"
+          width={726}
+          height={684}
+          className="top-[44px] tabxl:top-[161px] desk:top-[201px] left-0 tabxl:left-[66px] desk:left-[106px] absolute -z-30 w-[328px] desk:w-[528px] h-auto tabxl:rotate-90"
         />
       </motion.div>
 
@@ -29,12 +43,12 @@ export default function BeforeImages() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInAnimation({ x: -80, delay: 0.2 })}
-        className="absolute top-[419px] sm:top-[354px] tabxl:top-auto tabxl:bottom-[68px] laptop:bottom-[88px] deskxl:bottom-10 left-[calc(50%-97px)] 
-          tabxl:left-[266px] laptop:left-[300px] desk:left-[370px] deskxl:left-[416px] w-[194px] tabxl:w-[274px] h-auto"
+        className="absolute top-[419px] sm:top-[354px] desk:top-[544px] left-[calc(50%-97px)] 
+          tabxl:left-[46px] laptop:left-[86px] desk:left-[256px] w-[194px] tabxl:w-[274px] h-auto"
       >
         <Image
           src="/images/contentImages/before.svg"
-          alt="man"
+          alt="before"
           width={194}
           height={138}
           className="w-full h-auto"
