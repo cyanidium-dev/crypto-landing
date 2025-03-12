@@ -12,13 +12,13 @@ export default function ReviewsImages() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInAnimation({ scale: 0.8 })}
-        className="absolute -z-20 -top-4 tabxl:top-[137px] left-[calc(50%-200px)] tabxl:left-[0px] w-[484px] h-[551px] object-cover origin-center overflow-visible"
+        className="absolute -z-20 -top-[110px] tabxl:top-[54px] left-[calc(50%-200px)] tabxl:left-[0px] w-[484px] h-[551px] object-cover origin-center overflow-visible"
       >
         <Image
           src="/images/contentImages/reviewsMan.webp"
           alt="man"
           width={969}
-          height={1102}
+          height={1854}
           className="w-full h-auto"
         />
       </motion.div>
@@ -50,7 +50,7 @@ export default function ReviewsImages() {
           alt="man"
           width={1920}
           height={154}
-          className="hidden tabxl:block absolute z-10 top-[131px] tabxl:left-[79%] laptop:left-[69%] h-[154px] object-cover object-left overflow-visible"
+          className="hidden tabxl:block absolute z-10 top-[-42px] tabxl:left-[79%] laptop:left-[69%] h-[154px] object-cover object-left overflow-visible"
         />
       </motion.div>
 
