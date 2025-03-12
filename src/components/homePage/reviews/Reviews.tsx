@@ -17,7 +17,7 @@ export default function Reviews() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInAnimation({ x: 100 })}
-        className="container max-w-[1920px] tabxl:ml-[35.5%] laptop:ml-[30.5%] mb-[61px] tabxl:mb-[71px]"
+        className="container max-w-[1920px] tabxl:ml-[26.5%] laptop:ml-[30.5%] mb-[61px] tabxl:mb-[71px]"
       >
         <h2
           className="w-fit pr-1 mx-auto tabxl:mx-0 mb-3 font-michelin uppercase text-32bold tabxl:text-64bold text-transparent bg-clip-text bg-caviarGradient text-center 
@@ -29,13 +29,14 @@ export default function Reviews() {
           Трейдинг – это свобода и контроль над финансами!
         </p>
       </motion.div>
-      <motion.div initial="hidden"
+      <motion.div
+        initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={fadeInAnimation({ x: 100 })}>
-           <ReviewsSlider />
+        variants={fadeInAnimation({ x: 100 })}
+      >
+        <ReviewsSlider />
       </motion.div>
-   
     </section>
   );
 }

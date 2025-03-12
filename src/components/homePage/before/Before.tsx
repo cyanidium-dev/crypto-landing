@@ -1,17 +1,11 @@
 "use client";
-// import React, { useState, useEffect } from "react";
+
 import { motion } from "framer-motion";
 import DisadvantagesList from "./DisadvantagesList";
 import BeforeImages from "./BeforeImages";
 import { fadeInAnimation } from "@/helpers/animation";
 
 export default function Before() {
-  // const [isVisible, setIsVisible] = useState(false);
-
-  // useEffect(() => {
-  //   setIsVisible(true);
-  // }, []);
-
   return (
     <section
       id="before"
@@ -35,7 +29,11 @@ export default function Before() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={fadeInAnimation({ scale: 0.7, delay: 1.5, duration: 0.8 })}
+            variants={fadeInAnimation({
+              scale: 0.7,
+              delay: 1.5,
+              duration: 0.8,
+            })}
             className="tabxl:max-w-[263px] tabxl:mt-[22px] mb-12 tabxl:mb-0 tabxl:ml-auto text-14light tabxl:text-20light text-center tabxl:text-left"
           >
             Вот как может выглядеть ваш путь от новичка до успешного трейдера.
