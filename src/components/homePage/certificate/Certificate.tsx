@@ -10,7 +10,7 @@ export default function Certificate() {
       id="certificate"
       className="relative scroll-mt-[82px] tabxl:scroll-mt-[124px] py-[60px] laptop:py-[93px] mb-[123px] laptop:mb-14 overflow-x-clip"
     >
-      <div className="hidden tabxl:block absolute -z-10 top-[204px] left-[-355px] w-[404px] h-[240px] rounded-full bg-purple blur-[250px]"></div>
+      <div className="hidden tabxl:block absolute -z-10 top-[204px] left-[-355px] w-[404px] h-[240px] rounded-full bg-purple blur-[250px] supports-[backdrop-filter]:blur-[250px] will-change-transform"></div>
       <motion.div
         initial="hidden"
         whileInView="visible"

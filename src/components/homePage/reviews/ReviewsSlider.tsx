@@ -36,7 +36,7 @@ export default function ReviewsSlider() {
           <ReactPlayer url={link} controls width="100%" height="100%" />
         </SwiperSlide>
       ))}
-      <div className="hidden tabxl:block absolute z-[5] -top-6 right-[-100px] w-[260px] h-[331px] bg-sliderGradient blur-lg"></div>
+      <div className="hidden tabxl:block absolute z-[5] -top-6 right-[-100px] w-[260px] h-[331px] bg-sliderGradient blur-lg supports-[backdrop-filter]:blur-lg will-change-transform"></div>
     </Swiper>
   );
 }
