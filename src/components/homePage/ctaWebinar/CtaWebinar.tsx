@@ -21,7 +21,7 @@ export default function CtaWebinar() {
           className="max-w-[331px] sm:max-w-[472px] tabxl:max-w-[744px] mb-3 font-michelin uppercase text-24bold tabxl:text-40bold text-transparent 
         bg-clip-text bg-ctaWebinarTextGradient"
         >
-          залетай в мой канал и посети бесплатный вебинар по основам трейдинга
+          залетай в мой канал и посети вебинар по основам трейдинга
         </motion.h2>
         <motion.p
           initial="hidden"
@@ -30,7 +30,7 @@ export default function CtaWebinar() {
           variants={fadeInAnimation({ x: -100, delay: 0.3 })}
           className="w-[207px] tabxl:w-[338px] mb-[205px] tabxl:mb-[42px] text-14light tabxl:text-20light"
         >
-          Заработай свои первые 500$ с трейдинга уже на этой неделе!
+          Для моих подписчиков телеграм бесплатно.
         </motion.p>
         <BonusesList />
         <OpenTelegramChat />

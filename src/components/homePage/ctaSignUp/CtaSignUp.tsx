@@ -51,11 +51,11 @@ export default function CtaSignUp() {
               Присоединяйся сейчас и меняй свою жизнь!
             </h2>
             <p className="mb-4 tabxl:mb-10 text-14light tabxl:text-20light text-center tabxl:text-left">
-              Подпишись на наш Telegram и начни зарабатывать на трейдинге уже
-              сегодня.
+              Подпишись и забери стратегию на 1000$ бесплатно, уже сегодня!
             </p>
-            <p className="mb-4 tabxl:mb-10 font-michelin text-16bold tabxl:text-24bold uppercase text-center tabxl:text-left">
-              Мы заработаем только после того, как заработаете вы!
+            <p className="mb-4 tabxl:mb-10 text-14light tabxl:text-20light text-center tabxl:text-left">
+              Моя цель создать крупнейшее комьюнити трейдеров, где мы делимся
+              информацией и зарабатываем вместе! Присоединяйся и ты.
             </p>
             <a
               href={TELEGRAM_URL}

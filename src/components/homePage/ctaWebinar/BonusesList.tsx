@@ -6,7 +6,7 @@ import { listVariants } from "@/helpers/animation";
 export default function BonusesList() {
   const bonusesList = [
     {
-      title: "Бесплатные сливы курсов от топовых трейдеров",
+      title: "Разбор методов топовых мировых трейдеров",
     },
     {
       title: "Разборы реальных кейсов учеников",
@@ -20,13 +20,16 @@ export default function BonusesList() {
   ];
 
   return (
-    <motion.ul  initial="hidden"
+    <motion.ul
+      initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
       variants={listVariants}
-      transition={{ delay: 1.5 }} className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center tabxl:justify-between gap-5 tabxl:gap-y-6 tabxl:max-w-[1100px] tabxl:mx-auto">
+      transition={{ delay: 1.5 }}
+      className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center tabxl:justify-between gap-5 tabxl:gap-y-6 tabxl:max-w-[1100px] tabxl:mx-auto"
+    >
       {bonusesList.map((bonus, idx) => (
-        <BulletedListItem key={idx} item={bonus} onlyOpacity/>
+        <BulletedListItem key={idx} item={bonus} onlyOpacity />
       ))}
     </motion.ul>
   );

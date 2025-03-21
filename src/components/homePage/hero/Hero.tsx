@@ -45,8 +45,7 @@ export default function Hero() {
           <div>
             <p className="max-w-[682px] tabxl:w-[649px] mx-auto tabxl:mx-0 mb-[50px] tabxl:mb-[34px] text-16light text-center tabxl:text-left">
               Присоединяйся прямо сейчас и получай проверенные стратегии,
-              аналитику, закрытые инсайды и поддержку, чтобы зарабатывать
-              стабильно.
+              аналитику, закрытые инсайды и поддержку.
             </p>{" "}
             <a
               href={TELEGRAM_URL}
@@ -56,20 +55,8 @@ export default function Hero() {
             >
               <MainButton>Подписаться</MainButton>
             </a>
-            <h2 className="max-w-[592px] mt-7 font-michelin text-16bold tabxl:text-24bold text-center">
-              Подпишись и получи деньги
-            </h2>
           </div>
         </motion.div>
-
-        <motion.h3
-          initial="hidden"
-          animate={isVisible ? "visible" : "hidden"}
-          variants={fadeInAnimation({ y: 20, delay: 2.4 })}
-          className="w-fit tabxl:w-[593px] mx-auto tabxl:mr-0 tabxl:ml-auto font-michelin uppercase text-center tabxl:text-left text-18bold tabxl:text-32bold text-transparent bg-clip-text bg-lightPinkGradient"
-        >
-          Трейдинг – твой Стабильный заработок
-        </motion.h3>
       </div>
     </section>
   );
