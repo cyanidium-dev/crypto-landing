@@ -28,7 +28,7 @@ export default function ReviewsImages() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInAnimation({ scale: 0.8 })}
-        className="absolute left-[calc(50%+16px)] tabxl:left-[130px] bottom-[670px] tabxl:bottom-[150px] z-10 w-[85px] tabxl:w-[158px] h-auto  will-change-transform"
+        className="absolute left-[calc(50%+16px)] tabxl:left-[130px] bottom-[670px] tabxl:bottom-[150px] z-[5] w-[85px] tabxl:w-[158px] h-auto  will-change-transform"
       >
         <Image
           src="/images/contentImages/dollarsReviews.webp"

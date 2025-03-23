@@ -57,14 +57,14 @@ export default function HeroImages() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={fadeInAnimation({ scale: 0.9, duration: 1.5, delay: 2.4 })}
-        className="absolute top-[78px] tabxl:top-[65px] left-[calc(50%-232px)] tabxl:left-auto tabxl:right-[2px] -z-[35] rotate-[3.4deg] w-[489px] h-[364px]"
+        variants={fadeInAnimation({ scale: 0.7, duration: 2.2 })}
+        className="hidden tabxl:block absolute -z-[40] tabxl:top-[-93px] tabxl:h-[676px] tabxl:right-[calc(50%-836px)] overflow-visible"
       >
         <Image
-          src="/images/backgrounds/heroSection/banknotes.webp"
-          alt="banknotes"
-          width={1342}
-          height={1671}
+          src="/images/backgrounds/heroSection/dollarsSecond.webp"
+          alt="dollars"
+          width={680}
+          height={676}
         />
       </motion.div>
 
@@ -86,7 +86,7 @@ export default function HeroImages() {
 
       <div
         className="absolute -z-40 top-[-436px] tabxl:top-[-496px] left-[calc(50%-369px-225px)] tabxl:left-[-24px] 
-        w-[738px] h-[681px] tabxl:w-[1125px] tabxl:h-[1039px] rounded-full bg-black blur-[98px] tabxl:blur-[150px] supports-[backdrop-filter]:blur-[98px] supports-[backdrop-filter]:tabxl:blur-[150px] will-change-transform"
+        w-[738px] h-[681px] tabxl:w-[1125px] tabxl:h-[1039px] desk:w-[1300px] deskxl:w-[1550px] rounded-full bg-black blur-[98px] tabxl:blur-[150px] supports-[backdrop-filter]:blur-[98px] supports-[backdrop-filter]:tabxl:blur-[150px] will-change-transform"
       />
       <div
         className="absolute -z-50 top-[203px] tabxl:top-[-41px] left-[calc(50%-369px+132px)] tabxl:left-[-220px] 

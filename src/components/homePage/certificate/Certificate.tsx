@@ -16,7 +16,7 @@ export default function Certificate() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInAnimation({ scale: 0.8, duration: 1.5, delay: 0.8 })}
-        className="absolute bottom-0 left-5 tabxl:left-[494px] desk:left-[584px] z-10 w-[74px] tabxl:w-[118px] h-auto"
+        className="absolute bottom-0 left-5 tabxl:left-[494px] desk:left-[584px] z-[5] w-[74px] tabxl:w-[118px] h-auto"
       >
         <Image
           src="/images/icons/dollar.svg"
@@ -31,7 +31,7 @@ export default function Certificate() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInAnimation({ scale: 0.8, duration: 1.5, delay: 0.8 })}
-        className="absolute bottom-7 tabxl:bottom-12 left-[102px] tabxl:left-[630px] desk:left-[720px] z-10 w-[37px] tabxl:w-[59px] h-auto"
+        className="absolute bottom-7 tabxl:bottom-12 left-[102px] tabxl:left-[630px] desk:left-[720px] z-[5] w-[37px] tabxl:w-[59px] h-auto"
       >
         <Image
           src="/images/icons/dollar.svg"
